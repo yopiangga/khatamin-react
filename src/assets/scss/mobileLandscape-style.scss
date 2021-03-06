@@ -1,0 +1,52 @@
+@media only screen and (min-width: 568px) and ( max-width: 767px) {
+
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-Regular.ttf');
+        font-weight: 400;
+    }
+
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-Medium.ttf');
+        font-weight: 500;
+    }
+
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+        font-weight: 600;
+    }
+
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-Bold.ttf');
+        font-weight: 700;
+    }
+
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-Italic.ttf');
+        font-style: italic;
+    }
+
+    $fontPrimary : "Poppins";
+
+    $colorYellow : #FDBF1F;
+    $colorBlueLight : #CDEEF6;
+    $colorPink : #F17EAB;
+    $colorRed : #F02424;
+    $colorGray : #C4C4C4;
+    $colorLight : #EFEFEF;
+    $colorDark : #393939;
+    $colorBlack : #000000;
+
+
+
+
+    #desktop {
+        display: none;
+    }
+
+
+}
