@@ -12,8 +12,8 @@ import './assets/scss/tablet-style.css';
 import './assets/scss/mobileLandscape-style.css';
 import './assets/scss/mobile-style.css';
 
-import Sidebar from './Components/sidebar/Sidebar';
-import Navbar from './Components/navbar/Navbar';
+import { Sidebar } from './Components/sidebar/Sidebar';
+import { Navbar } from './Components/navbar/Navbar';
 import { UserProvider } from "./Pages/userContext";
 
 function App() {
@@ -26,8 +26,8 @@ function App() {
             <Navbar />
             <div className="body-content">
               <Switch>
-                <Route path="/login" exact>
-                  <Login />
+                <Route path="/" exact>
+                  {/* <Dashboard /> */}
                 </Route>
 
               </Switch>

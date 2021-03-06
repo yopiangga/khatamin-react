@@ -34,15 +34,175 @@
 $fontPrimary : "Poppins";
 
 $colorYellow : #FDBF1F;
+$colorGreen : #01A765;
 $colorBlueLight : #CDEEF6;
 $colorPink : #F17EAB;
 $colorRed : #F02424;
 $colorGray : #C4C4C4;
-$colorLight : #EFEFEF;
+$colorLight : #ECF0F3;
 $colorDark : #393939;
-$colorBlack : #000000;
+$colorBlack : #000D1E;
 
+    .App {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        min-height: 100vh;
+        font-family: $fontPrimary;
 
+        .sidebar {
+            width: 20%;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .logo {
+                width: 100%;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 30px;
+                border-right: 1px solid transparent;
+                border-bottom: 1px solid transparent;
+                z-index: 2;
+
+                img {
+                    height: 80px;
+                }
+            }
+
+            .menu {
+                width: 80%;
+
+                ul {
+                    width: 100%;
+
+                    li {
+                        transition: 300ms;
+                        height: 50px;
+                        width: 100%;
+                        border-radius: 10px;
+                        margin-bottom: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: white;
+
+                        A {
+                            width: 100%;
+                            height: 100%;
+                            font-family: $fontPrimary;
+                            color: $colorBlack;
+                            text-decoration: none;
+                            display: flex;
+                            align-items: center;
+
+                            .icon {
+                                width: 25%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: $colorGreen;
+                                font-size: 20px;
+                            }
+
+                        }
+                    }
+
+                    li:hover {
+                        transition: 300ms;
+                        background-color: $colorGreen;
+                        
+                        A {
+                            color: white;
+
+                            .icon {
+                                color: white;
+                            }
+                        }
+                    }
+                    
+                    li.active {
+                        background-color: $colorGreen;
+                        
+                        A {
+                            color: white;
+
+                            .icon {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .body {
+            width: 80%;
+            background-color: white;
+
+            .navbar {
+                height: 80px;
+                width: 100%;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h1 {
+                    font-weight: 500;
+                    font-size: 24px;
+                    color: $colorBlack;
+
+                    span {
+                        color: $colorGray;
+                    }
+                }
+
+                .icon {
+                    width: 100px;
+                    height: 100%;
+                    
+                    .icon-bell {
+                        width: 30px;
+                        height: 100%;
+                        font-size: 20px;
+                        color: $colorBlack;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .circle {
+                            background-color: $colorGreen;
+                            height: 18px;
+                            width: 18px;
+                            border-radius: 15px;
+                            font-size: 12px;
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: white;
+                            top: 20px;
+                            right: 0px;
+                        }
+                    }
+                }
+            }
+
+            .body-content {
+                background-color: $colorLight;
+                border-radius: 30px 0px 0px 0px;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    
 
     #mobile {
         display: none;
