@@ -15,6 +15,8 @@ import './assets/scss/mobile-style.css';
 import { Sidebar } from './Components/sidebar/Sidebar';
 import { Navbar } from './Components/navbar/Navbar';
 import { UserProvider } from "./Pages/userContext";
+import { Dashboard } from "./Components/dashboard/Dashboard";
+import { JadwalSholat } from "./Components/jadwalSholat/JadwalSholat";
 
 function App() {
   return (
@@ -27,9 +29,11 @@ function App() {
             <div className="body-content">
               <Switch>
                 <Route path="/" exact>
-                  {/* <Dashboard /> */}
+                  <Dashboard />
                 </Route>
-
+                <Route path="/jadwal-sholat" exact>
+                  <JadwalSholat />
+                </Route>
               </Switch>
             </div>
           </div>

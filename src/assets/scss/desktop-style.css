@@ -211,6 +211,386 @@
     border-radius: 30px 0px 0px 0px;
     height: 100%;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .dashboard {
+    width: 95%;
+    height: 100%;
+  }
+  .dashboard .filter {
+    margin-bottom: 30px;
+  }
+  .dashboard .card-surat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .dashboard .card-surat-detail {
+    width: 0px;
+    overflow: hidden;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  .dashboard .card-surat-detail .card {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  .dashboard .card-surat-detail .card .card-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .dashboard .card-surat-detail .card .card-head h2 {
+    color: #01A765;
+  }
+  .dashboard .card-surat-detail .card .card-head .text-arab {
+    width: 90%;
+  }
+  .dashboard .card-surat-detail .card .card-head .text-arab h1 {
+    font-size: 32px;
+    line-height: 44px;
+    text-align: right;
+  }
+  .dashboard .card-surat-detail .card .card-body audio {
+    width: 100%;
+    outline: none;
+  }
+  .dashboard .card-surat-detail .card .card-body audio source {
+    outline: none;
+  }
+  .dashboard .card-surat-detail .card .card-body h4 {
+    color: #393939;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .dashboard .card-surat-detail .card .card-body p {
+    color: #000D1E;
+    line-height: 28px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .dashboard .card-surat-detail.active {
+    width: 70%;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  .dashboard .card-group.nano {
+    width: 30%;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  .dashboard .card-group {
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .dashboard .card-group .shadow {
+    margin: 0px 20px 40px 20px;
+    -webkit-box-shadow: 20px -20px 40px white;
+            box-shadow: 20px -20px 40px white;
+    width: 265px;
+    border-radius: 20px;
+    height: 125px;
+  }
+  .dashboard .card-group .shadow .card {
+    -webkit-box-shadow: -20px 20px 40px rgba(57, 57, 57, 0.12);
+            box-shadow: -20px 20px 40px rgba(57, 57, 57, 0.12);
+    background-color: #ECF0F3;
+    width: 250px;
+    height: 110px;
+    border-radius: 20px;
+    padding: 15px 15px 15px 15px;
+  }
+  .dashboard .card-group .shadow .card .card-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .dashboard .card-group .shadow .card .card-head .circle {
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(1, 167, 101, 0.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #01A765;
+  }
+  .dashboard .card-group .shadow .card .card-head .icon {
+    color: #01A765;
+    font-size: 20px;
+    width: 45px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .dashboard .card-group .shadow .card .card-head .icon svg {
+    position: absolute;
+    left: 0;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  .dashboard .card-group .shadow .card .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .dashboard .card-group .shadow .card .card-body h4 {
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .dashboard .card-group .shadow .card .card-body h5 {
+    color: #393939;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .dashboard .card-group .shadow .card .card-body .right h4 {
+    font-size: 24px;
+    color: #393939;
+  }
+  .dashboard .card-group .shadow .card:hover .card-head .icon svg {
+    left: 15px;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  .jadwalSholat {
+    color: #000D1E;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .jadwalSholat .content {
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .jadwalSholat .content .content-left {
+    width: 70%;
+  }
+  .jadwalSholat .content .content-left .animation {
+    width: 100%;
+    height: 450px;
+  }
+  .jadwalSholat .content .content-left .information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    color: #000D1E;
+  }
+  .jadwalSholat .content .content-left .information .clock h1 {
+    font-size: 60px;
+    font-weight: 600;
+  }
+  .jadwalSholat .content .content-left .information .location {
+    margin-left: 30px;
+  }
+  .jadwalSholat .content .content-left .information .location h2 {
+    font-size: 24px;
+    color: #01A765;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .jadwalSholat .content .content-left .information .location h2 span {
+    color: #000D1E;
+    margin-left: 10px;
+  }
+  .jadwalSholat .content .content-left .information .location h3 {
+    font-size: 16px;
+  }
+  .jadwalSholat .content .content-right {
+    width: 30%;
+  }
+  .jadwalSholat .content .content-right .card-group {
+    width: 100%;
+    min-height: 770px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow {
+    -webkit-box-shadow: -20px 20px 40px rgba(57, 57, 57, 0.12);
+            box-shadow: -20px 20px 40px rgba(57, 57, 57, 0.12);
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    position: absolute;
+    background-color: #ECF0F3;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow .card {
+    background-color: transparent;
+    border-radius: 20px;
+    width: 230px;
+    height: 90px;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    -webkit-box-shadow: 20px -20px 40px white;
+            box-shadow: 20px -20px 40px white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow .card .card-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    width: 50%;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow .card .card-left h5 {
+    top: 35px;
+    color: #01A765;
+    position: absolute;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow .card .card-left h4 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow .card .card-right {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow .card .card-right .box {
+    width: 50px;
+    height: 50px;
+    background-color: #000D1E;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow .card .card-right .box svg {
+    font-size: 24px;
+    color: white;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow-1 {
+    top: 40px;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow-2 {
+    top: 200px;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow-3 {
+    top: 360px;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow-4 {
+    top: 520px;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow-5 {
+    top: 680px;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow-1:hover {
+    top: 50px;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow-2:hover {
+    top: 210px;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow-3:hover {
+    top: 370px;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow-4:hover {
+    top: 530px;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow-5:hover {
+    top: 690px;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow:hover {
+    -webkit-box-shadow: inset -4px 4px 8px rgba(57, 57, 57, 0.08);
+            box-shadow: inset -4px 4px 8px rgba(57, 57, 57, 0.08);
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    background-color: #ECF0F3;
+  }
+  .jadwalSholat .content .content-right .card-group .shadow:hover .card {
+    -webkit-box-shadow: inset 4px -4px 8px white;
+            box-shadow: inset 4px -4px 8px white;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    background-color: transparent;
   }
   #mobile {
     display: none;

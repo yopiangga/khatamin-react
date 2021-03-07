@@ -22,7 +22,7 @@ export function Sidebar() {
             </div>
             <div className="menu">
                 <ul>
-                    <li className="active">
+                    <li className={menuActive == "beranda" ? "active" : ""}>
                         <Link to="/" >
                             <div className="icon"><FaBookReader /> </div>
                             <h4>Beranda</h4>
