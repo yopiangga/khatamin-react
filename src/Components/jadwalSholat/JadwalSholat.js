@@ -7,55 +7,56 @@ export function JadwalSholat() {
 
     const [menuActive, setMenuActive, url, setUrl] = useContext(UserContext);
 
-    const [jadwal, setJadwal] = useState({Asr: "", Dhuhr: "", Maghrib: "", Isha: "", Fajr: ""});
-    const [lokasi, setLokasi] = useState({latitude: 0, longitude: 0});
-    
+    const [jadwal, setJadwal] = useState({ Asr: "", Dhuhr: "", Maghrib: "", Isha: "", Fajr: "" });
+
+    const [dateVar, setDateVar] = useState({});
+
+    document.title = "Jadwal Sholat";
+
     useEffect(() => {
         setMenuActive("jadwalSholat");
-        axios.get(`https://api.siforlat.com/api/v1/prayTimes`, {latitude: lokasi.latitude, longitude: lokasi.longitude, duration: 1}).then(
+        let tanggal = new Date();
+        axios.get(`http://api.aladhan.com/v1/calendar?latitude=${JSON.parse(localStorage.getItem('latitude'))}&longitude=${JSON.parse(localStorage.getItem('longitude'))}&method=2&month=${tanggal.getMonth() + 1}&year=${tanggal.getFullYear()}`, {
+        }).then(
             (res) => {
-                console.log(res.data.results.datetime.times);
-                console.log("CORS gan :)");
-                setJadwal(res.data.results.datetime.times);
+                // console.log(res);
+                setJadwal(res.data.data[tanggal.getDate()].timings);
             }
-            ).catch((err) => {
-                console.log(err);
+        ).catch((err) => {
+            console.log(err);
         })
     }, [])
-    
-    const geoLocation = () => {
-        if(navigator.geolocation){
-            navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-            console.log("browser anda jelek");
-        }
+
+    function jam() {
+        let tanggal = new Date();
+        return(`${tanggal.getHours()} : ${tanggal.getMinutes()}`);
     }
-    
-    const showPosition = (position) => {
-        // console.log(position.coords);
-        setLokasi({
-            latitude: position.coords.latitude,
-            longitude : position.coords.longitude
-        })
-    }
-    geoLocation();
-    
-    
+
     return (
         <div className="jadwalSholat">
             <div className="content">
                 <div className="content-left">
                     <div className="animation">
-
+                        <div className="layer1">
+                            <div className="layer2">
+                                <div className="layer3">
+                                    <h1>23</h1>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="information">
                         <div className="clock">
-                            <h1>ja</h1>
+                            <h1>
+                                {
+                                    jam()
+                                }
+                            </h1>
                         </div>
                         <div className="location">
                             <h2><FaLocationArrow /> <span>Mencari Lokasi Anda</span></h2>
-                            <h3>Latitude {lokasi.latitude.toFixed(6)}, Longitude {lokasi.longitude.toFixed(6)}</h3>
+                            <h3>Latitude {JSON.parse(localStorage.getItem("latitude")).toFixed(6)}, Longitude {JSON.parse(localStorage.getItem("longitude")).toFixed(6)}</h3>
                         </div>
                     </div>
                 </div>
@@ -65,7 +66,7 @@ export function JadwalSholat() {
                             <div className="card">
                                 <div className="card-left">
                                     <h5>Subuh</h5>
-                                    <h4>{jadwal.Fajr} WIB</h4>
+                                    <h4>{jadwal.Fajr}</h4>
                                 </div>
                                 <div className="card-right">
                                     <div className="box">
@@ -78,7 +79,7 @@ export function JadwalSholat() {
                             <div className="card">
                                 <div className="card-left">
                                     <h5>Dhuhur</h5>
-                                    <h4>{jadwal.Dhuhr} WIB</h4>
+                                    <h4>{jadwal.Dhuhr}</h4>
                                 </div>
                                 <div className="card-right">
                                     <div className="box">
@@ -91,7 +92,7 @@ export function JadwalSholat() {
                             <div className="card">
                                 <div className="card-left">
                                     <h5>Ashar</h5>
-                                    <h4>{jadwal.Asr} WIB</h4>
+                                    <h4>{jadwal.Asr}</h4>
                                 </div>
                                 <div className="card-right">
                                     <div className="box">
@@ -104,7 +105,7 @@ export function JadwalSholat() {
                             <div className="card">
                                 <div className="card-left">
                                     <h5>Magrib</h5>
-                                    <h4>{jadwal.Maghrib} WIB</h4>
+                                    <h4>{jadwal.Maghrib}</h4>
                                 </div>
                                 <div className="card-right">
                                     <div className="box">
@@ -117,7 +118,7 @@ export function JadwalSholat() {
                             <div className="card">
                                 <div className="card-left">
                                     <h5>Isya</h5>
-                                    <h4>{jadwal.Isha} WIB</h4>
+                                    <h4>{jadwal.Isha}</h4>
                                 </div>
                                 <div className="card-right">
                                     <div className="box">

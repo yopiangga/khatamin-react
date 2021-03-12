@@ -45,12 +45,14 @@ $colorBlack : #000D1E;
 
     .App {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         width: 100%;
         min-height: 100vh;
         font-family: $fontPrimary;
 
         .sidebar {
+            left: 0;
+            position: fixed;
             width: 20%;
             background-color: white;
             display: flex;
@@ -405,6 +407,7 @@ $colorBlack : #000D1E;
                 }
 
                 .information {
+                    position: fixed;
                     display: flex;
                     width: 100%;
                     color: $colorBlack;
@@ -477,7 +480,7 @@ $colorBlack : #000D1E;
                                 display: flex;
                                 flex-direction: column;
                                 position: relative;
-                                width: 50%;
+                                width: 60%;
 
                                 h5 {
                                     top: 35px;
@@ -495,7 +498,7 @@ $colorBlack : #000D1E;
                             }
 
                             .card-right {
-                                width: 50%;
+                                width: 40%;
                                 display: flex;
                                 justify-content: flex-end;
 

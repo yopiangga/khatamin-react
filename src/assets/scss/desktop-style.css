@@ -28,14 +28,16 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     width: 100%;
     min-height: 100vh;
     font-family: "Poppins";
   }
   .App .sidebar {
+    left: 0;
+    position: fixed;
     width: 20%;
     background-color: white;
     display: -webkit-box;
@@ -425,6 +427,7 @@
     height: 450px;
   }
   .jadwalSholat .content .content-left .information {
+    position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -506,7 +509,7 @@
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-    width: 50%;
+    width: 60%;
   }
   .jadwalSholat .content .content-right .card-group .shadow .card .card-left h5 {
     top: 35px;
@@ -521,7 +524,7 @@
     font-weight: 500;
   }
   .jadwalSholat .content .content-right .card-group .shadow .card .card-right {
-    width: 50%;
+    width: 40%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
