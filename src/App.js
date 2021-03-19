@@ -18,6 +18,8 @@ import { UserProvider } from "./Pages/userContext";
 import { Dashboard } from "./Components/dashboard/Dashboard";
 import { JadwalSholat } from "./Components/jadwalSholat/JadwalSholat";
 import { Kalender } from "./Components/kalender/Kalender";
+import { Tuntunan } from "./Components/tuntunan/Tuntunan";
+import { DoaTahlil } from "./Components/tuntunan/DoaTahlil";
 
 function App() {
   return (
@@ -37,6 +39,12 @@ function App() {
                 </Route>
                 <Route path="/kalender" exact>
                   <Kalender />
+                </Route>
+                <Route path="/tuntunan-ibadah" exact>
+                  <Tuntunan />
+                </Route>
+                <Route path="/tuntunan-ibadah/doa-tahlil" exact>
+                  <DoaTahlil />
                 </Route>
               </Switch>
             </div>
