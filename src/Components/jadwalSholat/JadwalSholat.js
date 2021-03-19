@@ -29,7 +29,7 @@ export function JadwalSholat() {
 
     function jam() {
         let tanggal = new Date();
-        return(`${tanggal.getHours()} : ${tanggal.getMinutes()}`);
+        return (`${tanggal.getHours()} : ${tanggal.getMinutes()}`);
     }
 
     return (
@@ -38,9 +38,14 @@ export function JadwalSholat() {
                 <div className="content-left">
                     <div className="animation">
                         <div className="layer1">
-                            <div className="layer2">
-                                <div className="layer3">
-                                    <h1>23</h1>
+
+                        </div>
+                        <div className="layer2">
+                            <div className="shadow1">
+                                <div className="shadow2">
+                                    <div className="layer3">
+                                        <h1>23<span> %</span></h1>
+                                    </div>
                                 </div>
                             </div>
                         </div>

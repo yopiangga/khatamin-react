@@ -309,7 +309,7 @@
         flex-wrap: wrap;
   }
   .dashboard .card-group .shadow {
-    margin: 0px 20px 40px 20px;
+    margin: 0px 30px 40px 30px;
     -webkit-box-shadow: 20px -20px 40px white;
             box-shadow: 20px -20px 40px white;
     width: 265px;
@@ -425,6 +425,97 @@
   .jadwalSholat .content .content-left .animation {
     width: 100%;
     height: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .jadwalSholat .content .content-left .animation .layer1 {
+    position: absolute;
+    height: 390px;
+    width: 390px;
+    border-radius: 100%;
+    background-color: #01A765;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 50%, 0% 50%);
+            clip-path: polygon(0% 0%, 100% 0%, 50% 50%, 0% 50%);
+    overflow: visible;
+  }
+  .jadwalSholat .content .content-left .animation .layer2 {
+    position: absolute;
+    border-radius: 100%;
+    width: 380px;
+    height: 380px;
+    background-color: #ECF0F3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .jadwalSholat .content .content-left .animation .layer2 .shadow1 {
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+    background-color: #ECF0F3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-shadow: -60px 60px 60px rgba(1, 167, 101, 0.12);
+            box-shadow: -60px 60px 60px rgba(1, 167, 101, 0.12);
+  }
+  .jadwalSholat .content .content-left .animation .layer2 .shadow1 .shadow2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    -webkit-box-shadow: 60px -60px 60px rgba(1, 167, 101, 0.12);
+            box-shadow: 60px -60px 60px rgba(1, 167, 101, 0.12);
+  }
+  .jadwalSholat .content .content-left .animation .layer2 .shadow1 .shadow2 .layer3 {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 0px 0px 30px rgba(196, 196, 196, 0.2);
+            box-shadow: 0px 0px 30px rgba(196, 196, 196, 0.2);
+  }
+  .jadwalSholat .content .content-left .animation .layer2 .shadow1 .shadow2 .layer3 h1 {
+    color: #01A765;
+    font-size: 56px;
+  }
+  .jadwalSholat .content .content-left .animation .layer2 .shadow1 .shadow2 .layer3 h1 span {
+    font-size: 24px;
   }
   .jadwalSholat .content .content-left .information {
     position: fixed;
@@ -435,6 +526,7 @@
     color: #000D1E;
   }
   .jadwalSholat .content .content-left .information .clock h1 {
+    margin-left: 10px;
     font-size: 60px;
     font-weight: 600;
   }
@@ -594,6 +686,222 @@
     -webkit-transition: 300ms;
     transition: 300ms;
     background-color: transparent;
+  }
+  .kalender {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .kalender .content {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .kalender .content .content-left {
+    width: 100%;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  .kalender .content .content-left .header {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .kalender .content .content-left .header div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .kalender .content .content-left .header h4 {
+    font-size: 16px;
+    color: #01A765;
+  }
+  .kalender .content .content-left .header h3 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #393939;
+  }
+  .kalender .content .content-left .header .tahun-left {
+    width: 30%;
+  }
+  .kalender .content .content-left .header .tahun-now {
+    width: 40%;
+  }
+  .kalender .content .content-left .header .tahun-right {
+    width: 30%;
+  }
+  .kalender .content .content-left .body {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: transparent;
+  }
+  .kalender .content .content-left .body .body-hari {
+    width: 700px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .kalender .content .content-left .body .body-hari h3 {
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .kalender .content .content-left .body .body-tanggal {
+    width: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .kalender .content .content-left .body .body-tanggal .box {
+    width: 100px;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .kalender .content .content-left .body .body-tanggal .box .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+  }
+  .kalender .content .content-left .body .body-tanggal .box .circle h4 {
+    font-size: 16px;
+  }
+  .kalender .content .content-left .body .body-tanggal .box .circle:hover {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    background-color: #01A765;
+  }
+  .kalender .content .content-left .body .body-tanggal .box .circle:hover h4 {
+    color: #ECF0F3;
+  }
+  .kalender .content .content-left .body .body-tanggal .box .circle.active {
+    background-color: #01A765;
+  }
+  .kalender .content .content-left .body .body-tanggal .box .circle.active h4 {
+    color: #ECF0F3;
+  }
+  .kalender .content .content-right {
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    width: 0%;
+    background-color: #393939;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  .kalender .content .content-right .content-head {
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+  .kalender .content .content-right .content-head h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #01A765;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .kalender .content .content-right .content-head hr {
+    height: 2px;
+    width: 100px;
+    background-color: #01A765;
+    border: none;
+  }
+  .kalender .content .content-right .content-body {
+    width: 80%;
+    margin-bottom: 30px;
+    color: #ECF0F3;
+  }
+  .kalender .content .content-right .content-body h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ECF0F3;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .kalender .content .content-right .content-body p {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .kalender .content .content-right .content-body hr {
+    height: 2px;
+    width: 80%;
+    background-color: #ECF0F3;
+    border: none;
+  }
+  .kalender .content .content-right.active {
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    width: 30%;
+  }
+  .kalender .content .content-left.resize {
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    width: 70%;
   }
   #mobile {
     display: none;
