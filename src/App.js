@@ -20,6 +20,10 @@ import { JadwalSholat } from "./Components/jadwalSholat/JadwalSholat";
 import { Kalender } from "./Components/kalender/Kalender";
 import { Tuntunan } from "./Components/tuntunan/Tuntunan";
 import { DoaTahlil } from "./Components/tuntunan/DoaTahlil";
+import { AsmaulHusna } from "./Components/tuntunan/AsmaulHusna";
+import { DoaHarian } from "./Components/tuntunan/DoaHarian";
+import { BacaanSholat } from "./Components/tuntunan/BacaanSholat";
+import { NiatSholat } from "./Components/tuntunan/NiatSholat";
 
 function App() {
   return (
@@ -45,6 +49,18 @@ function App() {
                 </Route>
                 <Route path="/tuntunan-ibadah/doa-tahlil" exact>
                   <DoaTahlil />
+                </Route>
+                <Route path="/tuntunan-ibadah/asmaul-husna" exact>
+                  <AsmaulHusna />
+                </Route>
+                <Route path="/tuntunan-ibadah/doa-harian" exact>
+                  <DoaHarian />
+                </Route>
+                <Route path="/tuntunan-ibadah/bacaan-sholat" exact>
+                  <BacaanSholat />
+                </Route>
+                <Route path="/tuntunan-ibadah/niat-sholat" exact>
+                  <NiatSholat />
                 </Route>
               </Switch>
             </div>

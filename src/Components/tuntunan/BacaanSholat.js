@@ -6,20 +6,22 @@ import { UserContext } from '../../Pages/userContext';
 import axios from 'axios';
 import $, { data } from 'jquery';
 
-export function DoaTahlil() {
+export function BacaanSholat() {
     const [menuActive, setMenuActive, url, setUrl] = useContext(UserContext);
-    const [tahlil, setTahlil] = useState([{ arabic: "", id: "", translation: "", title: "" }]);
+    const [bacaan, setBacaan] = useState([{ arabic: "", latin: "", translation: "", title: "" }]);
 
     useEffect(() => {
         setMenuActive("tuntunanIbadah");
-        axios.get(`https://islamic-api-zhirrr.vercel.app/api/tahlil`).then(
+        axios.get(`https://islamic-api-zhirrr.vercel.app/api/bacaanshalat`).then(
             (res) => {
-                setTahlil(res.data.data);
+                setBacaan(res.data);
             }
         ).catch((err) => {
             console.log(err);
         })
     }, [])
+
+    // console.log(bacaan);
 
         $('.card-surat-detail').addClass('active');
         $('.card-group').addClass('nano');
@@ -34,7 +36,7 @@ export function DoaTahlil() {
 
                 <div className="card-surat-detail" style={{width: '100%'}}>
                     {
-                        tahlil[0].id == null ?
+                        bacaan == null ?
                             <div className="card">
                                 <div className="card-head">
                                     <h2> </h2>
@@ -45,24 +47,21 @@ export function DoaTahlil() {
                                 <div className="card-body">
                                     <h4> </h4>
                                     <p> </p>
-                                    <audio controls>
-                                        <source type="audio/mp3" id="audio" />
-                                    </audio>
                                 </div>
                             </div>
                             :
-                            tahlil.map(function (el, idx) {
+                            bacaan.map(function (el, idx) {
                                 return (
                                     <div className="card" key={idx}>
                                         <div className="card-head">
-                                            <h2>{el.id}</h2>
+                                            <h2>{idx + 1}</h2>
                                             <div className="text-arab">
                                                 <h1>{el.arabic}</h1>
                                             </div>
                                         </div>
                                         <div className="card-body">
-                                            <h4>Bahasa Indonesia</h4>
-                                            <p>{el.translation}</p>
+                                            <h4>{el.name}</h4>
+                                            <p>{el.terjemahan}</p>
                                         </div>
                                     </div>
                                 )

@@ -53,7 +53,7 @@ export function Tuntunan() {
                             <div className="card-head">
                                 <div className="circle">2</div>
                                 <div className="icon">
-                                    <FaLongArrowAltRight />
+                                    <Link to="/tuntunan-ibadah/asmaul-husna"><FaLongArrowAltRight /></Link>
                                 </div>
                             </div>
                             <div className="card-body">
@@ -73,7 +73,7 @@ export function Tuntunan() {
                             <div className="card-head">
                                 <div className="circle">3</div>
                                 <div className="icon">
-                                    <FaLongArrowAltRight />
+                                    <Link to="/tuntunan-ibadah/doa-harian"><FaLongArrowAltRight /></Link>
                                 </div>
                             </div>
                             <div className="card-body">
@@ -93,7 +93,7 @@ export function Tuntunan() {
                             <div className="card-head">
                                 <div className="circle">4</div>
                                 <div className="icon">
-                                    <FaLongArrowAltRight />
+                                    <Link to="/tuntunan-ibadah/bacaan-sholat"><FaLongArrowAltRight /></Link>
                                 </div>
                             </div>
                             <div className="card-body">
@@ -113,7 +113,7 @@ export function Tuntunan() {
                             <div className="card-head">
                                 <div className="circle">5</div>
                                 <div className="icon">
-                                    <FaLongArrowAltRight />
+                                    <Link to="/tuntunan-ibadah/niat-sholat"><FaLongArrowAltRight /></Link>
                                 </div>
                             </div>
                             <div className="card-body">
