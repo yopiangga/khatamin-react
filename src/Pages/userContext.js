@@ -15,6 +15,8 @@ export const UserProvider = props => {
       navigator.geolocation.getCurrentPosition(showPosition);
     } else {
       console.log("browser anda jelek");
+      localStorage.setItem("latitude", -6.175372);
+      localStorage.setItem("longitude", 106.827194);
     }
   }
 
@@ -28,6 +30,8 @@ export const UserProvider = props => {
   }
   
   useEffect( () => {
+    localStorage.setItem("latitude", -6.175372);
+    localStorage.setItem("longitude", 106.827194);
     geoLocation();
   }, [])
 

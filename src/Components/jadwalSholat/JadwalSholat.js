@@ -19,7 +19,6 @@ export function JadwalSholat() {
         axios.get(`http://api.aladhan.com/v1/calendar?latitude=${JSON.parse(localStorage.getItem('latitude'))}&longitude=${JSON.parse(localStorage.getItem('longitude'))}&method=2&month=${tanggal.getMonth() + 1}&year=${tanggal.getFullYear()}`, {
         }).then(
             (res) => {
-                // console.log(res);
                 setJadwal(res.data.data[tanggal.getDate()].timings);
             }
         ).catch((err) => {
@@ -30,6 +29,23 @@ export function JadwalSholat() {
     function jam() {
         let tanggal = new Date();
         return (`${tanggal.getHours()} : ${tanggal.getMinutes()}`);
+    }
+
+    function matahari(){
+        let tanggal = new Date();
+        let jam = tanggal.getHours();
+        let menit = tanggal.getMinutes();
+        
+        if(jam >= 0 && jam <= 5){
+            let persen = (((jam + 6) * 60) + menit) / 720 * 100;
+            return(`${persen.toFixed(0)}`);
+        } else if(jam >= 6 && jam <= 18){
+            let persen = (((jam - 6) * 60) + menit) / 720 * 100;
+            return(`${persen.toFixed(0)}`);
+        } else {
+            let persen = (((jam - 18) * 60) + menit) / 720 * 100;
+            return(`${persen.toFixed(0)}`);
+        }
     }
 
     return (
@@ -44,7 +60,7 @@ export function JadwalSholat() {
                             <div className="shadow1">
                                 <div className="shadow2">
                                     <div className="layer3">
-                                        <h1>23<span> %</span></h1>
+                                        <h1>{matahari()}<span> %</span></h1>
                                     </div>
                                 </div>
                             </div>

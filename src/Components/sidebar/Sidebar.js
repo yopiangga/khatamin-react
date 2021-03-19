@@ -46,12 +46,12 @@ export function Sidebar() {
                             <h4>Kalender</h4>
                     </Link>
                     </li>
-                    <li className={menuActive == "kompas" ? "active" : ""}>
+                    {/* <li className={menuActive == "kompas" ? "active" : ""}>
                         <Link to="/kompas" >
                             <div className="icon"><FaBookReader /> </div>
                             <h4>Kompas</h4>
                     </Link>
-                    </li>
+                    </li> */}
                     <li className={menuActive == "tuntunanIbadah" ? "active" : ""}>
                         <Link to="/tuntunan-ibadah" >
                             <div className="icon"><FaBookReader /> </div>
