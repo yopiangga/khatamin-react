@@ -125,7 +125,7 @@ export function Dashboard() {
 
                             suratGroups.map(function (el, idx) {
                                 return (
-                                    <div className="shadow" key={el.number}>
+                                    <div className="shadow" key={idx}>
                                         <div className="card">
                                             <div className="card-head" id={el.number}>
                                                 <div className="circle">{el.number}</div>
