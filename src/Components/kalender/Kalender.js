@@ -64,7 +64,7 @@ export function Kalender() {
                         </div>
                     </div>
                     <div className="body">
-                        <div className="body-hari">
+                        <div className="body-hari" id="desktop">
                             <h3>Min</h3>
                             <h3>Sen</h3>
                             <h3>Sel</h3>
@@ -72,6 +72,15 @@ export function Kalender() {
                             <h3>Kam</h3>
                             <h3>Jum</h3>
                             <h3>Sab</h3>
+                        </div>
+                        <div className="body-hari" id="mobile">
+                            <h3>M</h3>
+                            <h3>S</h3>
+                            <h3>S</h3>
+                            <h3>R</h3>
+                            <h3>K</h3>
+                            <h3>J</h3>
+                            <h3>S</h3>
                         </div>
                         <div className="body-tanggal">
                             {/* <div className="box">

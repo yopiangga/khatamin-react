@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { useContext, useEffect } from 'react';
-import { FaLongArrowAltRight } from 'react-icons/fa';
+import { FaBookReader, FaLongArrowAltRight } from 'react-icons/fa';
 import { UserContext } from '../../Pages/userContext';
 import axios from 'axios';
 import $, { data } from 'jquery';
@@ -18,7 +18,6 @@ export function Dashboard() {
         axios.get(`https://api.quran.sutanlab.id/surah/`).then(
             (res) => {
                 setSuratGroups(res.data.data);
-                // console.log(res.data.data);
             }
         ).catch((err) => {
             console.log(err);
@@ -31,6 +30,7 @@ export function Dashboard() {
         $('#audio').stop();
         $('.card-surat-detail').addClass('active');
         $('.card-group').addClass('nano');
+        $('.circle-book').addClass('active');
 
         axios.get(`https://api.quran.sutanlab.id/surah/${id}`).then(
             (res) => {
@@ -39,6 +39,12 @@ export function Dashboard() {
         ).catch((err) => {
             console.log(err);
         })
+    }
+
+    const handleSurat = () => {
+        $('.card-surat-detail').removeClass('active');
+        $('.card-group').removeClass('nano');
+        $('.circle-book').removeClass('active');
     }
 
     const handleAudio = (event) => {
@@ -148,6 +154,10 @@ export function Dashboard() {
                             })
                     }
 
+                </div>
+
+                <div className="circle-book" onClick={handleSurat}>
+                   <FaBookReader /> 
                 </div>
             </div>
         </div>
