@@ -30,6 +30,7 @@ function App() {
 
   const handleSidebar = () => {
       $('.sidebar').removeClass('active');
+      $('.notifikasi').removeClass('active');
   }
 
   return (

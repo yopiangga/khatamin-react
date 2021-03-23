@@ -21,6 +21,7 @@ export function Sidebar() {
     const [menuActive, setMenuActive, url, setUrl] = useContext(UserContext);
 
     const handleSidebar = () => {
+        $('.notifikasi').removeClass('active');
         $('.sidebar').removeClass('active');
     }
 

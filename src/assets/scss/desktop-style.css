@@ -217,6 +217,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    cursor: pointer;
   }
   .App .body .navbar .icon .icon-bell .circle {
     background-color: #01A765;
@@ -237,6 +238,152 @@
     color: white;
     top: 20px;
     right: 0px;
+  }
+  .App .body .navbar .notifikasi {
+    z-index: 998;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    width: 250px;
+    height: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 70px;
+    right: 55px;
+  }
+  .App .body .navbar .notifikasi .triangle {
+    height: 20px;
+    width: 100%;
+    background-color: white;
+    -webkit-clip-path: polygon(220px 0, 235px 20px, 205px 20px);
+            clip-path: polygon(220px 0, 235px 20px, 205px 20px);
+  }
+  .App .body .navbar .notifikasi .body-box {
+    min-height: 180px;
+    width: 250px;
+    background-color: white;
+    border-radius: 15px;
+  }
+  .App .body .navbar .notifikasi .body-box .notifikasi-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60px;
+    margin-bottom: 0px;
+  }
+  .App .body .navbar .notifikasi .body-box .notifikasi-head h4 {
+    font-weight: 500;
+  }
+  .App .body .navbar .notifikasi .body-box .notifikasi-head hr {
+    width: 50px;
+    height: 1px;
+    border: none;
+    background-color: #01A765;
+  }
+  .App .body .navbar .notifikasi .body-box .notifikasi-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    height: 100px;
+  }
+  .App .body .navbar .notifikasi .body-box .notifikasi-body .item {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .App .body .navbar .notifikasi .body-box .notifikasi-body .item .item-left {
+    width: 20%;
+  }
+  .App .body .navbar .notifikasi .body-box .notifikasi-body .item .item-left .box {
+    width: 35px;
+    height: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 10px;
+    background-color: #01A765;
+    color: white;
+  }
+  .App .body .navbar .notifikasi .body-box .notifikasi-body .item .item-right {
+    width: 80%;
+  }
+  .App .body .navbar .notifikasi .body-box .notifikasi-body .item .item-right h5 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+  .App .body .navbar .notifikasi .body-box .notifikasi-body .item .item-right h4 {
+    font-weight: 500;
+    color: #01A765;
+  }
+  .App .body .navbar .notifikasi .body-box .notifikasi-body .notifikasi-close {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .App .body .navbar .notifikasi .body-box .notifikasi-body .notifikasi-close hr {
+    width: 90%;
+    height: 1px;
+    border: none;
+    background-color: #ECF0F3;
+  }
+  .App .body .navbar .notifikasi .body-box .notifikasi-body .notifikasi-close .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    cursor: pointer;
+  }
+  .App .body .navbar .notifikasi .body-box .notifikasi-body .notifikasi-close .text h4 {
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  .App .body .navbar .notifikasi .body-box .notifikasi-body .notifikasi-close .text path {
+    color: #01A765;
+  }
+  .App .body .navbar .notifikasi.active {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    height: 200px;
   }
   .App .body .body-content {
     background-color: #ECF0F3;
@@ -402,6 +549,7 @@
     left: 0;
     -webkit-transition: 300ms;
     transition: 300ms;
+    color: #01A765;
   }
   .dashboard .card-group .shadow .card .card-body {
     display: -webkit-box;

@@ -234,6 +234,130 @@
                         }
                     }
                 }
+
+                .notifikasi {
+                    transition: 300ms;
+                    width: 250px;
+                    height: 0px;
+                    overflow: hidden;
+                    position: absolute;
+                    top: 70px;
+                    right: 10px;
+
+                    .triangle {
+                        height: 20px;
+                        width: 100%;
+                        background-color: white;
+                        clip-path: polygon(220px 0, 235px 20px, 205px 20px);
+                    }
+
+                    .body-box {
+                        min-height: 180px;
+                        width: 250px;
+                        background-color: white;
+                        border-radius: 15px;
+
+                        .notifikasi-head {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            height: 60px;
+                            margin-bottom: 0px;
+
+                            h4 {
+                                font-weight: 500;
+                            }
+
+                            hr {
+                                width: 50px;
+                                height: 1px;
+                                border: none;
+                                background-color: $colorGreen;
+                            }
+                        }
+
+                        .notifikasi-body {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            position: relative;
+                            height: 100px;
+
+                            .item {
+                                width: 90%;
+                                display: flex;
+                                justify-content: space-between;
+
+                                .item-left {
+                                    width: 20%;
+
+                                    .box {
+                                        width: 35px;
+                                        height: 35px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border-radius: 10px;
+                                        background-color: $colorGreen;
+                                        color: white;
+                                    }
+                                }
+
+                                .item-right {
+                                    width: 80%;
+
+                                    h5 {
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        margin-bottom: 5px;
+                                    }
+
+                                    h4 {
+                                        font-weight: 500;
+                                        color: $colorGreen;
+                                    }
+                                }
+                            }
+
+                            .notifikasi-close {
+                                width: 100%;
+                                position: absolute;
+                                bottom: 0;
+                                display: flex;
+                                flex-direction: column;
+
+                                hr {
+                                    width: 90%;
+                                    height: 1px;
+                                    border: none;
+                                    background-color: $colorLight;
+                                }
+
+                                .text {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    h4 {
+                                        font-size: 14px;
+                                        margin-left: 5px;
+                                    }
+    
+                                    path {
+                                        color: $colorGreen;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .notifikasi.active {
+                    transition: 300ms;
+                    height: 200px;
+                }
+
             }
 
             .body-content {
