@@ -20,6 +20,10 @@ export function Sidebar() {
 
     const [menuActive, setMenuActive, url, setUrl] = useContext(UserContext);
 
+    const handleSidebar = () => {
+        $('.sidebar').removeClass('active');
+    }
+
     return (
         <div className="sidebar">
             <div className="logo">
@@ -27,47 +31,47 @@ export function Sidebar() {
             </div>
             <div className="menu">
                 <ul>
-                    <li className={menuActive == "beranda" ? "active" : ""}>
+                    <li onClick={handleSidebar} className={menuActive == "beranda" ? "active" : ""}>
                         <Link to="/" >
                             <div className="icon"><FaBookReader /> </div>
                             <h4>Beranda</h4>
                         </Link>
                     </li>
-                    <li className={menuActive == "timeLine" ? "active" : ""}>
+                    <li onClick={handleSidebar} className={menuActive == "timeLine" ? "active" : ""}>
                         <Link to="/berita" >
                             <div className="icon"><FaNewspaper /> </div>
                             <h4>Berita</h4>
                         </Link>
                     </li>
-                    <li className={menuActive == "jadwalSholat" ? "active" : ""}>
+                    <li onClick={handleSidebar} className={menuActive == "jadwalSholat" ? "active" : ""}>
                         <Link to="/jadwal-sholat" >
                             <div className="icon"><FaPray /> </div>
                             <h4>Jadwal Sholat</h4>
                         </Link>
                     </li>
-                    <li className={menuActive == "kalender" ? "active" : ""}>
+                    <li onClick={handleSidebar} className={menuActive == "kalender" ? "active" : ""}>
                         <Link to="/kalender" >
                             <div className="icon"><FaCalendarCheck /> </div>
                             <h4>Kalender</h4>
-                    </Link>
+                        </Link>
                     </li>
-                    {/* <li className={menuActive == "kompas" ? "active" : ""}>
+                    {/* <li onClick={handleSidebar} className={menuActive == "kompas" ? "active" : ""}>
                         <Link to="/kompas" >
                             <div className="icon"><FaBookReader /> </div>
                             <h4>Kompas</h4>
                     </Link>
                     </li> */}
-                    <li className={menuActive == "tuntunanIbadah" ? "active" : ""}>
+                    <li onClick={handleSidebar} className={menuActive == "tuntunanIbadah" ? "active" : ""}>
                         <Link to="/tuntunan-ibadah" >
                             <div className="icon"><FaPrayingHands /> </div>
                             <h4>Tuntunan</h4>
-                    </Link>
+                        </Link>
                     </li>
-                    <li className={menuActive == "infaq" ? "active" : ""}>
+                    <li onClick={handleSidebar} className={menuActive == "infaq" ? "active" : ""}>
                         <Link to="/infaq" >
                             <div className="icon"><FaMoneyCheckAlt /> </div>
                             <h4>Infaq</h4>
-                    </Link>
+                        </Link>
                     </li>
                 </ul>
             </div>

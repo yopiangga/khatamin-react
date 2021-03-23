@@ -5,6 +5,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import $ from 'jquery';
 
 import './assets/css/css-reset.css';
 import './assets/scss/desktop-style.css';
@@ -26,6 +27,11 @@ import { BacaanSholat } from "./Components/tuntunan/BacaanSholat";
 import { NiatSholat } from "./Components/tuntunan/NiatSholat";
 
 function App() {
+
+  const handleSidebar = () => {
+      $('.sidebar').removeClass('active');
+  }
+
   return (
     <UserProvider>
       <BrowserRouter>
@@ -33,7 +39,7 @@ function App() {
           <Sidebar />
           <div className="body">
             <Navbar />
-            <div className="body-content">
+            <div className="body-content" onClick={handleSidebar}>
               <Switch>
                 <Route path="/" exact>
                   <Dashboard />

@@ -50,7 +50,7 @@
         font-family: $fontPrimary;
 
         .sidebar {
-            transition: 300ms;
+            transition: 600ms;
             left: -300px;
             position: fixed;
             width: 300px;
@@ -364,7 +364,6 @@
             height: 100%;
             display: flex;
             flex-wrap: wrap;
-            align-items: center;
             justify-content: center;
 
             .shadow {
@@ -410,6 +409,7 @@
                             cursor: pointer;
 
                             svg {
+                                color: $colorGreen;
                                 position: absolute;
                                 left: 0;
                                 transition: 300ms;
