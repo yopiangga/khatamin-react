@@ -11,6 +11,7 @@ export function BacaanSholat() {
     const [bacaan, setBacaan] = useState([{ arabic: "", latin: "", translation: "", title: "" }]);
 
     useEffect(() => {
+        document.title = "Bacaan Sholat - Khatamin";
         setMenuActive("tuntunanIbadah");
         axios.get(`https://islamic-api-zhirrr.vercel.app/api/bacaanshalat`).then(
             (res) => {

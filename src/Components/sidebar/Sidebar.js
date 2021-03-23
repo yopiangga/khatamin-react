@@ -76,7 +76,7 @@ export function Sidebar() {
                 </ul>
             </div>
 
-            <div className="menuHidden">
+            <div className="menuHidden" id="mobile">
                 <div className="circle" onClick={handleMenu}>
                     <FaAngleLeft />
                 </div>

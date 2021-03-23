@@ -11,6 +11,7 @@ export function DoaHarian() {
     const [doa, setDoa] = useState([{ arabic: "", id: "", translation: "", title: "" }]);
 
     useEffect(() => {
+        document.title = "Doa Harian - Khatamin";
         setMenuActive("tuntunanIbadah");
         axios.get(`https://islamic-api-zhirrr.vercel.app/api/doaharian`).then(
             (res) => {

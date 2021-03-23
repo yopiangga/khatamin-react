@@ -139,6 +139,25 @@ $colorBlack : #000D1E;
                     }
                 }
             }
+
+            .menuHidden {
+                height: 100px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .circle {
+                    width: 60px;
+                    height: 60px;
+                    background-color: $colorLight;
+                    color: $colorDark;
+                    font-size: 24px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 100%;
+                }
+            }
         }
 
         .body {
@@ -152,6 +171,10 @@ $colorBlack : #000D1E;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+
+                .menu {
+                    color: transparent;
+                }
 
                 h1 {
                     font-weight: 500;

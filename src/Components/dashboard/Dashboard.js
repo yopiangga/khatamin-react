@@ -14,6 +14,7 @@ export function Dashboard() {
     const [surat, setSurat] = useState({ name: "", verses: [], numberOfVerses: "" });
 
     useEffect(() => {
+        document.title = "Qur'an - Khatamin";
         setMenuActive("beranda");
         axios.get(`https://api.quran.sutanlab.id/surah/`).then(
             (res) => {
@@ -156,7 +157,7 @@ export function Dashboard() {
 
                 </div>
 
-                <div className="circle-book" onClick={handleSurat}>
+                <div className="circle-book" id="mobile" onClick={handleSurat}>
                    <FaBookReader /> 
                 </div>
             </div>

@@ -11,6 +11,7 @@ export function AsmaulHusna() {
     const [asma, setAsma] = useState([{ arabic: "", id: "", translation: "", title: "" }]);
 
     useEffect(() => {
+        document.title = "Asmaul Husna - Khatamin";
         setMenuActive("tuntunanIbadah");
         axios.get(`https://islamic-api-zhirrr.vercel.app/api/asmaulhusna`).then(
             (res) => {

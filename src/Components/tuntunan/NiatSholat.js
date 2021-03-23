@@ -11,6 +11,7 @@ export function NiatSholat() {
     const [niat, setNiat] = useState([{ arabic: "", latin: "", translation: "", title: "" }]);
 
     useEffect(() => {
+        document.title = "Niat Sholat - Khatamin";
         setMenuActive("tuntunanIbadah");
         axios.get(`https://islamic-api-zhirrr.vercel.app/api/niatshalat`).then(
             (res) => {

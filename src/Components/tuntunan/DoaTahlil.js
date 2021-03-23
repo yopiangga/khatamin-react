@@ -11,6 +11,7 @@ export function DoaTahlil() {
     const [tahlil, setTahlil] = useState([{ arabic: "", id: "", translation: "", title: "" }]);
 
     useEffect(() => {
+        document.title = "Doa Tahlil - Khatamin";
         setMenuActive("tuntunanIbadah");
         axios.get(`https://islamic-api-zhirrr.vercel.app/api/tahlil`).then(
             (res) => {

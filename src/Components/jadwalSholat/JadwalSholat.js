@@ -14,6 +14,7 @@ export function JadwalSholat() {
     document.title = "Jadwal Sholat";
 
     useEffect(() => {
+        document.title = "Jadwal Sholat - Khatamin";
         setMenuActive("jadwalSholat");
         let tanggal = new Date();
         axios.get(`http://api.aladhan.com/v1/calendar?latitude=${JSON.parse(localStorage.getItem('latitude'))}&longitude=${JSON.parse(localStorage.getItem('longitude'))}&method=2&month=${tanggal.getMonth() + 1}&year=${tanggal.getFullYear()}`, {

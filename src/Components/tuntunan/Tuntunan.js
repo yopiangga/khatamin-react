@@ -15,6 +15,7 @@ export function Tuntunan() {
     const [menuActive, setMenuActive, url, setUrl] = useContext(UserContext);
 
     useEffect(() => {
+        document.title = "Tuntunan Ibadah - Khatamin";
         setMenuActive("tuntunanIbadah");
     }, [])
 
