@@ -1,6 +1,7 @@
 
 import React from "react";
 import {
+  HashRouter,
   BrowserRouter,
   Switch,
   Route,
@@ -35,7 +36,7 @@ function App() {
 
   return (
     <UserProvider>
-      <BrowserRouter>
+      <HashRouter>
         <div className="App">
           <Sidebar />
           <div className="body">
@@ -73,7 +74,7 @@ function App() {
             </div>
           </div>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </UserProvider>
   );
 }
