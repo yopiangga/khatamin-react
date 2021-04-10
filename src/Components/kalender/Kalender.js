@@ -9,6 +9,17 @@ export function Kalender() {
 
     const [kalender, setKalender] = useState([{ date: { gregorian: { day: "", month : {en : ""}, year : "", weekday: { en: "" } }, hijri: { day: "", month : {en : ""}, year : "", weekday: { en: "" } } } }]);
     const [dataSinggah, setDataSinggah] = useState([]);
+    const [acara, setAcara] = useState({
+        date : {
+            hijri : {
+                date : "",
+                month : {
+                    ar : "",
+                    en: ""
+                }
+            }
+        }
+    });
 
     useEffect(() => {
         document.title = "Kalender - Khatamin";
@@ -27,9 +38,11 @@ export function Kalender() {
 
     console.log(kalender);
 
-    const handleClick = () => {
+    const handleClick = (event) => {
         $('.kalender .content .content-left').addClass('resize');
         $('.kalender .content .content-right').addClass('active');
+
+        setAcara(kalender[event]);
 
     }
 
@@ -102,9 +115,10 @@ export function Kalender() {
 
                             {
                                 kalender.map(function (el, idx) {
+                                    let tanggal = new Date();
                                     return (
                                         <div className="box" key={idx}>
-                                            <div className={(el.date.gregorian.day == "19") ? "circle active" : "circle"} onClick={handleClick}>
+                                            <div className={(el.date.gregorian.day == `${tanggal.getDate()}`) ? "circle active" : "circle"} onClick={()=> {handleClick(idx)}}>
                                                 <h4>{el.date.gregorian.day}</h4>
                                             </div>
                                         </div>
@@ -117,14 +131,14 @@ export function Kalender() {
                 </div>
                 <div className="content-right">
                     <div className="content-head">
-                        <h2>Acara</h2>
+                        <h2>{acara.date.hijri.month.ar}</h2>
                         <hr />
                     </div>
                     <div className="content-body">
                         <div className="items">
-                            <h3>Isra' Mi'raj</h3>
+                            <h3>{acara.date.hijri.month.en}</h3>
                             <hr />
-                            <p>17 Maret 2021</p>
+                            <p>{acara.date.hijri.date}</p>
                         </div>
                     </div>
                 </div>

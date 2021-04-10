@@ -36,8 +36,8 @@ export function Navbar() {
                         <h4>Pengingat</h4>
                         <hr />
                     </div>
-                    <div class="notifikasi-body">
-                        <div class="item">
+                    <div className="notifikasi-body">
+                        <div className="item">
                             <div className="item-left">
                                 <div className="box">
                                     <FaCloudMoon />

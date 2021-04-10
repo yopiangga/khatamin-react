@@ -10,7 +10,7 @@ import logo from '../../assets/images/logo.png'
 import { UserContext } from '../../Pages/userContext'
 import $ from 'jquery';
 
-import { FaAngleLeft, FaBookReader, FaCalendarCheck, FaMoneyCheckAlt, FaNewspaper, FaPray, FaPrayingHands } from 'react-icons/fa';
+import { FaAngleLeft, FaBookReader, FaCalendarCheck, FaMapSigns, FaMoneyCheckAlt, FaNewspaper, FaPray, FaPrayingHands } from 'react-icons/fa';
 
 const handleMenu = () => {
     $('.sidebar').removeClass('active');
@@ -38,7 +38,7 @@ export function Sidebar() {
                             <h4>Beranda</h4>
                         </Link>
                     </li>
-                    <li onClick={handleSidebar} className={menuActive == "timeLine" ? "active" : ""}>
+                    <li onClick={handleSidebar} className={menuActive == "berita" ? "active" : ""}>
                         <Link to="/berita" >
                             <div className="icon"><FaNewspaper /> </div>
                             <h4>Berita</h4>
@@ -66,6 +66,12 @@ export function Sidebar() {
                         <Link to="/tuntunan-ibadah" >
                             <div className="icon"><FaPrayingHands /> </div>
                             <h4>Tuntunan</h4>
+                        </Link>
+                    </li>
+                    <li onClick={handleSidebar} className={menuActive == "kisahNabi" ? "active" : ""}>
+                        <Link to="/kisah-nabi" >
+                            <div className="icon"><FaMapSigns /> </div>
+                            <h4>Kisah 25 Nabi</h4>
                         </Link>
                     </li>
                     <li onClick={handleSidebar} className={menuActive == "infaq" ? "active" : ""}>

@@ -26,6 +26,10 @@ import { AsmaulHusna } from "./Components/tuntunan/AsmaulHusna";
 import { DoaHarian } from "./Components/tuntunan/DoaHarian";
 import { BacaanSholat } from "./Components/tuntunan/BacaanSholat";
 import { NiatSholat } from "./Components/tuntunan/NiatSholat";
+import { Berita } from "./Components/berita/Berita";
+import { KisahNabi } from "./Components/kisahNabi/KisahNabi";
+import { KisahNabiDetail } from "./Components/kisahNabi/KisahNabiDetail";
+import { Infaq } from "./Components/infaq/Infaq";
 
 function App() {
 
@@ -45,6 +49,9 @@ function App() {
               <Switch>
                 <Route path="/" exact>
                   <Dashboard />
+                </Route>
+                <Route path="/berita" exact>
+                  <Berita />
                 </Route>
                 <Route path="/jadwal-sholat" exact>
                   <JadwalSholat />
@@ -69,6 +76,15 @@ function App() {
                 </Route>
                 <Route path="/tuntunan-ibadah/niat-sholat" exact>
                   <NiatSholat />
+                </Route>
+                <Route path="/kisah-nabi" exact>
+                  <KisahNabi />
+                </Route>
+                <Route path="/kisah-nabi-detail" exact>
+                  <KisahNabiDetail />
+                </Route>
+                <Route path="/infaq" exact>
+                  <Infaq />
                 </Route>
               </Switch>
             </div>
