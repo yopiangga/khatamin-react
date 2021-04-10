@@ -12,6 +12,7 @@ export function Berita() {
     const [pagination, setPagination] = useState({page: "1", total_page: "1"});
 
     useEffect(() => {
+        document.title = "Berita - Khatamin";
         setMenuActive('berita');
         // https://cors-anywhere.herokuapp.com/
         axios.get(`https://artikel-islam.netlify.app/.netlify/functions/api/msh?page=${page}`).then(

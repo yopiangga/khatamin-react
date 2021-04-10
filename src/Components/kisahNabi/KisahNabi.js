@@ -10,6 +10,7 @@ export function KisahNabi() {
     const [kisah, setKisah] = useState([{description: "", icon_url: "", image_url: "", name: "", thn_kelahiran: "", tmp: "", usia: ""}]);
     
     useEffect(() => {
+        document.title = "Kisah Nabi - Khatamin";
         setMenuActive('kisahNabi');
         axios.get(`https://islamic-api-zhirrr.vercel.app/api/kisahnabi`).then(
             (res) => {

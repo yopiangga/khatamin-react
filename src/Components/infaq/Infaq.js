@@ -16,6 +16,7 @@ export function Infaq() {
     const [menuActive, setMenuActive, url, setUrl] = useContext(UserContext);
 
     useEffect(() => {
+        document.title = "Infaq - Khatamin";
         setMenuActive('infaq');
     }, [])
 
