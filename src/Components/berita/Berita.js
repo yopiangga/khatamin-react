@@ -13,8 +13,8 @@ export function Berita() {
 
     useEffect(() => {
         setMenuActive('berita');
-
-        axios.get(`https://cors-anywhere.herokuapp.com/https://artikel-islam.netlify.app/.netlify/functions/api/msh?page=${page}`).then(
+        // https://cors-anywhere.herokuapp.com/
+        axios.get(`https://artikel-islam.netlify.app/.netlify/functions/api/msh?page=${page}`).then(
             (res) => {
                 console.log(res.data.data);
                 setBerita(res.data.data.data);
@@ -61,12 +61,12 @@ export function Berita() {
                                 <div className="card" key={idx} onClick={() => {handleDetail(el.url)}}>
                                     <div className="card-top">
                                         <div className="box">
-                                            <img src={el.thumbnail} alt=" " />
+                                            <img src={(el.thumbnail == '') ? example : el.thumbnail} alt=" " />
                                         </div>
                                     </div>
                                     <div className="card-bottom">
                                         <div className="box">
-                                            <h3>{el.title}</h3>
+                                            <h3>{(el.title == '') ? <div className="loading"></div> : el.title}</h3>
                                             <div className="author">
                                                 <div className="circle">
                                                     <FaRegUser />

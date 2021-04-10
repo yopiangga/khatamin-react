@@ -21,6 +21,7 @@ export function JadwalSholat() {
         }).then(
             (res) => {
                 setJadwal(res.data.data[tanggal.getDate()].timings);
+                localStorage.setItem('jadwal', JSON.stringify(res.data.data[tanggal.getDate()].timings));
             }
         ).catch((err) => {
             console.log(err);

@@ -605,6 +605,12 @@ $colorBlack : #000D1E;
                                 margin-bottom: 10px;
                                 max-height: 45px;
                                 overflow: hidden;
+
+                                .loading {
+                                    width: 90%;
+                                    height: 10px;
+                                    background-color: rgba($color: $colorGreen, $alpha: 0.1);
+                                }
                             }
 
                             p {
@@ -656,7 +662,7 @@ $colorBlack : #000D1E;
                                 display: flex;
                                 align-items: center;
                                 color: $colorGreen;
-                                justify-content: flex-end;
+                                justify-content: flex-start;
                                 width: 100%;
 
                                 h5 {
@@ -1283,7 +1289,7 @@ $colorBlack : #000D1E;
                                 display: flex;
                                 align-items: center;
                                 color: $colorGreen;
-                                justify-content: flex-end;
+                                justify-content: flex-start;
                                 width: 100%;
 
                                 h5 {
@@ -1665,7 +1671,7 @@ $colorBlack : #000D1E;
                                 display: flex;
                                 align-items: center;
                                 color: $colorGreen;
-                                justify-content: flex-end;
+                                justify-content: flex-start;
                                 width: 100%;
     
                                 h5 {

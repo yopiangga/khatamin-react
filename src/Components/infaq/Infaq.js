@@ -8,6 +8,9 @@ import {
 } from "react-router-dom";
 import { FaLongArrowAltRight, FaRegCalendarCheck, FaRegMoneyBillAlt, FaSignInAlt, FaSignOutAlt } from 'react-icons/fa';
 import example from "../../assets/images/example.jpg"
+import kegiatan1 from "../../assets/images/kegiatan-1.jpeg"
+import kegiatan2 from "../../assets/images/kegiatan-2.jpeg"
+import kegiatan3 from "../../assets/images/kegiatan-3.jpg"
 
 export function Infaq() {
     const [menuActive, setMenuActive, url, setUrl] = useContext(UserContext);
@@ -144,8 +147,8 @@ export function Infaq() {
                             </div>
                             <div className="card-body">
                                 <div className="left">
-                                    <h4>BANK BCA</h4>
-                                    <h5>Rp 100.000</h5>
+                                    <h4>BANK BRI</h4>
+                                    <h5>0033 0112 5771 509 a.n Devafilla Rizky Santosa</h5>
                                 </div>
                                 <div className="right">
                                     <h4></h4>
@@ -170,13 +173,30 @@ export function Infaq() {
                     <div className="card">
                         <div className="card-top">
                             <div className="box">
-                                <img src={example} alt="" />
+                                <img src={kegiatan1} alt="" />
                             </div>
                         </div>
                         <div className="card-bottom">
                             <div className="box">
-                                <h3>How to make the perfect morning coffe</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione modi eaque temporibus cum a facilis nesciunt.</p>
+                                <h3>Jadikan hidumu lebih berkah dengan beramal</h3>
+                                <p>Jika kamu menjadikan alquran sebagai panduan, maka kamu tidak akan pernah kehilangan arah.</p>
+                                <div className="footer">
+                                    <FaRegCalendarCheck />
+                                    <h5>9 April 2021</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="card-top">
+                            <div className="box">
+                                <img src={kegiatan2} alt="" />
+                            </div>
+                        </div>
+                        <div className="card-bottom">
+                            <div className="box">
+                                <h3>9 Santri Tahfidz BAZNAS Selesaikan Khataman Al-Qur’an 30 Juz</h3>
+                                <p>Mahasiswa dari beberapa kampus di Indonesia Sambut Ramadhan dengan membentuk majelis rutinan khataman Al Qur'an</p>
                                 <div className="footer">
                                     <FaRegCalendarCheck />
                                     <h5>12 April 2021</h5>
@@ -187,33 +207,16 @@ export function Infaq() {
                     <div className="card">
                         <div className="card-top">
                             <div className="box">
-                                <img src={example} alt="" />
+                                <img src={kegiatan3} alt="" />
                             </div>
                         </div>
                         <div className="card-bottom">
                             <div className="box">
-                                <h3>How to make the perfect morning coffe</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione modi eaque temporibus cum a facilis nesciunt.</p>
+                                <h3>Warga desa mbrambang mengadakan khataman Al-Qur'an setiap bulan sekali</h3>
+                                <p>Kegiatan ini dilakukan oleh masyarakat dengan antusian setiap malam juma'at wage</p>
                                 <div className="footer">
                                     <FaRegCalendarCheck />
-                                    <h5>12 April 2021</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="card-top">
-                            <div className="box">
-                                <img src={example} alt="" />
-                            </div>
-                        </div>
-                        <div className="card-bottom">
-                            <div className="box">
-                                <h3>How to make the perfect morning coffe</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione modi eaque temporibus cum a facilis nesciunt.</p>
-                                <div className="footer">
-                                    <FaRegCalendarCheck />
-                                    <h5>12 April 2021</h5>
+                                    <h5>14 April 2021</h5>
                                 </div>
                             </div>
                         </div>

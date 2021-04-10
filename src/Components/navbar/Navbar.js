@@ -1,11 +1,43 @@
 
 import { FaBars, FaCloudMoon, FaLongArrowAltUp, FaRegBell, FaRegTimesCircle } from 'react-icons/fa';
 import $ from 'jquery';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export function Navbar() {
 
     const [titlePage, setTitlePage] = useState({ first: "Qur'an", last: "Audio" });
+    const [jadwal, setJadwal] = useState({ Asr: "", Dhuhr: "", Maghrib: "", Isha: "", Fajr: "" });
+    // const [jam, setJam] = useState([]);
+    
+    useEffect(() => {
+        let bantuan = JSON.parse(localStorage.getItem('jadwal'));
+        setJadwal(bantuan);
+    }, [])
+
+    // console.log(jadwal);
+
+    var waktuSholat = ["Subuh", "Dhuhur", "Ashar", "Maghrib", "Isya"];
+    var jamSholat = [jadwal.Fajr, jadwal.Dhuhr, jadwal.Asr, jadwal.Maghrib, jadwal.Isha];
+    var jam = [];    
+    jam[0] = jadwal.Fajr[0] + jadwal.Fajr[1];
+    jam[0] = parseInt(jam[0]);
+    jam[1] = jadwal.Dhuhr[0] + jadwal.Dhuhr[1];
+    jam[1] = parseInt(jam[1]);
+    jam[2] = jadwal.Asr[0] + jadwal.Asr[1];
+    jam[2] = parseInt(jam[2]);
+    jam[3] = jadwal.Maghrib[0] + jadwal.Maghrib[1];
+    jam[3] = parseInt(jam[3]);
+    jam[4] = jadwal.Isha[0] + jadwal.Isha[1];
+    jam[4] = parseInt(jam[4]);
+    
+    let date = new Date();
+    var saatIni = date.getHours();
+    var posisi = 10;
+
+    for(let i=0; i<5; i++){
+        if(saatIni > jam[i])
+            posisi = i;
+    }
 
     const handleMenu = () => {
         $('.sidebar').toggleClass('active');
@@ -26,7 +58,7 @@ export function Navbar() {
             <div className="icon" onClick={handleNotifikasi}>
                 <div className="icon-bell">
                     <FaRegBell />
-                    <div className="circle">5</div>
+                    <div className="circle" style={(posisi == 10) ? {display: 'none'} : {display: 'flex'}}>1</div>
                 </div>
             </div>
             <div className="notifikasi">
@@ -37,7 +69,7 @@ export function Navbar() {
                         <hr />
                     </div>
                     <div className="notifikasi-body">
-                        <div className="item">
+                        <div className="item" style={(posisi == 10) ? {display: 'none'} : {display: 'flex'}}>
                             <div className="item-left">
                                 <div className="box">
                                     <FaCloudMoon />
@@ -45,8 +77,8 @@ export function Navbar() {
 
                             </div>
                             <div className="item-right">
-                                <h5>Waktu Sholat Dhuhur</h5>
-                                <h4>12.05</h4>
+                                <h5>Waktu Sholat {waktuSholat[posisi]}</h5>
+                                <h4>{jamSholat[posisi]}</h4>
                             </div>
                         </div>
 

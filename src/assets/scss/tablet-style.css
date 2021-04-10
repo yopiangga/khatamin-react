@@ -650,6 +650,212 @@
     -webkit-transition: 300ms;
     transition: 300ms;
   }
+  .berita {
+    color: #000D1E;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .berita .content {
+    width: 95%;
+  }
+  .berita .content .filter-content {
+    height: 40px;
+    width: 100%;
+  }
+  .berita .content .group-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 30px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .berita .content .group-card .card {
+    width: 215px;
+    height: 300px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .berita .content .group-card .card .card-top {
+    width: 100%;
+    height: 50%;
+  }
+  .berita .content .group-card .card .card-top .box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 20px;
+  }
+  .berita .content .group-card .card .card-top .box img {
+    width: 215px;
+    min-height: 150px;
+  }
+  .berita .content .group-card .card .card-bottom {
+    width: 100%;
+    height: 50%;
+  }
+  .berita .content .group-card .card .card-bottom .box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .berita .content .group-card .card .card-bottom .box h3 {
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 10px;
+    max-height: 45px;
+    overflow: hidden;
+  }
+  .berita .content .group-card .card .card-bottom .box h3 .loading {
+    width: 90%;
+    height: 10px;
+    background-color: rgba(1, 167, 101, 0.1);
+  }
+  .berita .content .group-card .card .card-bottom .box p {
+    line-height: 22px;
+    color: #393939;
+    font-size: 14px;
+    max-height: 45px;
+    overflow: hidden;
+  }
+  .berita .content .group-card .card .card-bottom .box .author {
+    position: absolute;
+    bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .berita .content .group-card .card .card-bottom .box .author .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+    background-color: #CDEEF6;
+    color: #01A765;
+    margin-right: 10px;
+  }
+  .berita .content .group-card .card .card-bottom .box .author .text {
+    color: #393939;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .berita .content .group-card .card .card-bottom .box .author .text h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  .berita .content .group-card .card .card-bottom .box .footer {
+    position: absolute;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #01A765;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+  }
+  .berita .content .group-card .card .card-bottom .box .footer h5 {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #393939;
+  }
+  .berita .content .group-card .card-more {
+    margin-right: 1%;
+    width: 215px;
+    height: 300px;
+    padding: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .berita .content .group-card .card-more button {
+    padding: 10px 20px 10px 20px;
+    width: 150px;
+    height: 40px;
+    background-color: #01A765;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    outline: none;
+  }
+  .berita .content .group-card .card-more button path {
+    margin-left: 20px;
+  }
+  .berita .content .group-card .card-more button:hover {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    background-color: transparent;
+    color: #01A765;
+    border: 2px solid white;
+    cursor: pointer;
+  }
   .jadwalSholat {
     color: #000D1E;
     width: 100%;
@@ -1166,6 +1372,634 @@
   .kalender .content .content-left.resize {
     -webkit-transition: 500ms;
     transition: 500ms;
+  }
+  .kisahNabi {
+    color: #000D1E;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .kisahNabi .content {
+    width: 95%;
+  }
+  .kisahNabi .content .filter-content {
+    height: 40px;
+    width: 100%;
+  }
+  .kisahNabi .content .group-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 30px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .kisahNabi .content .group-card .card {
+    margin-right: 1%;
+    width: 215px;
+    height: 300px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .kisahNabi .content .group-card .card .card-top {
+    width: 100%;
+    height: 50%;
+  }
+  .kisahNabi .content .group-card .card .card-top .box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 20px;
+  }
+  .kisahNabi .content .group-card .card .card-top .box img {
+    width: 215px;
+    min-height: 150px;
+  }
+  .kisahNabi .content .group-card .card .card-bottom {
+    width: 100%;
+    height: 50%;
+  }
+  .kisahNabi .content .group-card .card .card-bottom .box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .kisahNabi .content .group-card .card .card-bottom .box h3 {
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 10px;
+    max-height: 45px;
+    overflow: hidden;
+  }
+  .kisahNabi .content .group-card .card .card-bottom .box p {
+    line-height: 22px;
+    color: #393939;
+    font-size: 14px;
+    max-height: 45px;
+    overflow: hidden;
+  }
+  .kisahNabi .content .group-card .card .card-bottom .box .author {
+    position: absolute;
+    bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .kisahNabi .content .group-card .card .card-bottom .box .author .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+    background-color: #CDEEF6;
+    color: #01A765;
+    margin-right: 10px;
+  }
+  .kisahNabi .content .group-card .card .card-bottom .box .author .text {
+    color: #393939;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .kisahNabi .content .group-card .card .card-bottom .box .author .text h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  .kisahNabi .content .group-card .card .card-bottom .box .footer {
+    position: absolute;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #01A765;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+  }
+  .kisahNabi .content .group-card .card .card-bottom .box .footer h5 {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #393939;
+  }
+  .kisahNabi .content .group-card .card-more {
+    margin-right: 1%;
+    width: 215px;
+    height: 300px;
+    padding: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .kisahNabi .content .group-card .card-more button {
+    padding: 10px 20px 10px 20px;
+    width: 150px;
+    height: 40px;
+    background-color: #01A765;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    outline: none;
+  }
+  .kisahNabi .content .group-card .card-more button path {
+    margin-left: 20px;
+  }
+  .kisahNabi .content .group-card .card-more button:hover {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    background-color: transparent;
+    color: #01A765;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+  .kisahNabiDetail {
+    color: #000D1E;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .kisahNabiDetail .content {
+    width: 95%;
+  }
+  .kisahNabiDetail .content .header {
+    width: 100%;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+  .kisahNabiDetail .content .header .image {
+    border-radius: 40px;
+    overflow: hidden;
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .kisahNabiDetail .content .header .image img {
+    width: 100%;
+  }
+  .kisahNabiDetail .content .title {
+    width: 100%;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .kisahNabiDetail .content .title h1 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+  }
+  .kisahNabiDetail .content .title .informasi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .kisahNabiDetail .content .title .informasi h4 {
+    margin-left: 30px;
+    font-size: 16px;
+  }
+  .kisahNabiDetail .content .description {
+    background-color: white;
+    border-radius: 40px;
+    width: 100%;
+    min-height: 100px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 30px 25px 30px 25px;
+  }
+  .kisahNabiDetail .content .description pre {
+    white-space: pre-wrap;
+    line-height: 24px;
+  }
+  .infaq {
+    width: 95%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .infaq .filter {
+    margin-bottom: 30px;
+  }
+  .infaq .card-surat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .infaq .card-surat h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 35px;
+  }
+  .infaq .card-group.nano {
+    width: 30%;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+  }
+  .infaq .card-group {
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .infaq .card-group .shadow {
+    margin: 0px 30px 40px 30px;
+    -webkit-box-shadow: 20px -20px 40px white;
+            box-shadow: 20px -20px 40px white;
+    width: 265px;
+    border-radius: 20px;
+    min-height: 125px;
+  }
+  .infaq .card-group .shadow .card {
+    -webkit-box-shadow: -20px 20px 40px rgba(57, 57, 57, 0.12);
+            box-shadow: -20px 20px 40px rgba(57, 57, 57, 0.12);
+    background-color: #ECF0F3;
+    width: 250px;
+    min-height: 110px;
+    border-radius: 20px;
+    padding: 15px 15px 15px 15px;
+  }
+  .infaq .card-group .shadow .card .card-head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  .infaq .card-group .shadow .card .card-head .circle {
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    background-color: rgba(1, 167, 101, 0.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #01A765;
+  }
+  .infaq .card-group .shadow .card .card-head .icon {
+    color: #01A765;
+    font-size: 20px;
+    width: 45px;
+    height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .infaq .card-group .shadow .card .card-head .icon svg {
+    position: absolute;
+    left: 0;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    color: #01A765;
+  }
+  .infaq .card-group .shadow .card .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .infaq .card-group .shadow .card .card-body h4 {
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .infaq .card-group .shadow .card .card-body h5 {
+    color: #393939;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .infaq .card-group .shadow .card .card-body .right h4 {
+    font-size: 24px;
+    color: #393939;
+  }
+  .infaq .card-group .shadow .card:hover .card-head .icon svg {
+    left: 15px;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+  }
+  .infaq .rekening {
+    width: 95%;
+    margin-bottom: 50px;
+  }
+  .infaq .rekening h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .infaq .rekening .card-rekening {
+    width: 100%;
+    min-height: 200px;
+    background-color: white;
+    border-radius: 30px;
+  }
+  .infaq .kegiatan-card {
+    width: 95%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .infaq .kegiatan-card h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .infaq .kegiatan-card .card-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .infaq .kegiatan-card .card-group .card {
+    width: 250px;
+    height: 340px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .infaq .kegiatan-card .card-group .card .card-top {
+    width: 100%;
+    height: 50%;
+  }
+  .infaq .kegiatan-card .card-group .card .card-top .box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 20px;
+  }
+  .infaq .kegiatan-card .card-group .card .card-top .box img {
+    width: 250px;
+    min-height: 180px;
+  }
+  .infaq .kegiatan-card .card-group .card .card-bottom {
+    width: 100%;
+    height: 50%;
+  }
+  .infaq .kegiatan-card .card-group .card .card-bottom .box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .infaq .kegiatan-card .card-group .card .card-bottom .box h3 {
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 10px;
+    max-height: 45px;
+    overflow: hidden;
+  }
+  .infaq .kegiatan-card .card-group .card .card-bottom .box p {
+    line-height: 22px;
+    color: #393939;
+    font-size: 14px;
+    max-height: 70px;
+    overflow: hidden;
+  }
+  .infaq .kegiatan-card .card-group .card .card-bottom .box .author {
+    position: absolute;
+    bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .infaq .kegiatan-card .card-group .card .card-bottom .box .author .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+    background-color: #CDEEF6;
+    color: #01A765;
+    margin-right: 10px;
+  }
+  .infaq .kegiatan-card .card-group .card .card-bottom .box .author .text {
+    color: #393939;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .infaq .kegiatan-card .card-group .card .card-bottom .box .author .text h5 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  .infaq .kegiatan-card .card-group .card .card-bottom .box .footer {
+    position: absolute;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #01A765;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+  }
+  .infaq .kegiatan-card .card-group .card .card-bottom .box .footer h5 {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #393939;
+  }
+  .infaq .kegiatan-card .card-group .card-more {
+    margin-right: 1%;
+    width: 215px;
+    height: 300px;
+    padding: 15px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .infaq .kegiatan-card .card-group .card-more button {
+    padding: 10px 20px 10px 20px;
+    width: 150px;
+    height: 40px;
+    background-color: #01A765;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    outline: none;
+  }
+  .infaq .kegiatan-card .card-group .card-more button path {
+    margin-left: 20px;
+  }
+  .infaq .kegiatan-card .card-group .card-more button:hover {
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    background-color: transparent;
+    color: #01A765;
+    border: 2px solid white;
+    cursor: pointer;
   }
   #desktop {
     display: mobile;
