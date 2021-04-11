@@ -2,22 +2,27 @@
 import { FaBars, FaCloudMoon, FaLongArrowAltUp, FaRegBell, FaRegTimesCircle } from 'react-icons/fa';
 import $ from 'jquery';
 import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 export function Navbar() {
 
     const [titlePage, setTitlePage] = useState({ first: "Qur'an", last: "Audio" });
-    const [jadwal, setJadwal] = useState({ Asr: "", Dhuhr: "", Maghrib: "", Isha: "", Fajr: "" });
-    // const [jam, setJam] = useState([]);
-    
+    const [jadwal, setJadwal] = useState({ Asr: 0, Dhuhr: 0, Maghrib: 0, Isha: 0, Fajr: 0 });
+
     useEffect(() => {
-        let bantuan = JSON.parse(localStorage.getItem('jadwal'));
-        setJadwal(bantuan);
+        let tanggal = new Date();
+        axios.get(`http://api.aladhan.com/v1/calendar?latitude=${JSON.parse(localStorage.getItem('latitude'))}&longitude=${JSON.parse(localStorage.getItem('longitude'))}&method=2&month=${tanggal.getMonth() + 1}&year=${tanggal.getFullYear()}`, {
+        }).then(
+            (res) => {
+                setJadwal(res.data.data[tanggal.getDate()].timings);
+            }
+        ).catch((err) => {
+            console.log(err);
+        })
     }, [])
-
-    // console.log(jadwal);
-
-    var waktuSholat = ["Subuh", "Dhuhur", "Ashar", "Maghrib", "Isya"];
+    
     var jamSholat = [jadwal.Fajr, jadwal.Dhuhr, jadwal.Asr, jadwal.Maghrib, jadwal.Isha];
+    var waktuSholat = ["Subuh", "Dhuhur", "Ashar", "Maghrib", "Isya"];
     var jam = [];    
     jam[0] = jadwal.Fajr[0] + jadwal.Fajr[1];
     jam[0] = parseInt(jam[0]);
@@ -36,7 +41,7 @@ export function Navbar() {
 
     for(let i=0; i<5; i++){
         if(saatIni > jam[i])
-            posisi = i;
+            posisi = (i + 1) % 5;
     }
 
     const handleMenu = () => {
