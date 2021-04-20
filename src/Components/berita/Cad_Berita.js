@@ -16,7 +16,7 @@ export function Berita() {
         document.title = "Berita - Khatamin";
         setMenuActive('berita');
         // https://cors-anywhere.herokuapp.com/
-        axios.get(`https://cors-anywhere.herokuapp.com/https://artikel-islam.netlify.app/.netlify/functions/api/msh?page=${page}`).then(
+        axios.get(`https://artikel-islam.netlify.app/.netlify/functions/api/msh?page=${page}`).then(
             (res) => {
                 console.log(res.data.data);
                 setBerita(res.data.data.data);
