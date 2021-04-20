@@ -2,6 +2,7 @@ import { useContext, useState, useEffect } from "react";
 import axios from 'axios';
 import { UserContext } from "../../Pages/userContext";
 import $ from 'jquery';
+import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 
 export function Kalender() {
 
@@ -43,7 +44,11 @@ export function Kalender() {
         $('.kalender .content .content-right').addClass('active');
 
         setAcara(kalender[event]);
+    }
 
+    const handleClose = () => {
+        $('.kalender .content .content-left').removeClass('resize');
+        $('.kalender .content .content-right').removeClass('active');
     }
 
     const cekStart = (hari) => {
@@ -130,6 +135,9 @@ export function Kalender() {
                     </div>
                 </div>
                 <div className="content-right">
+                    <div className="content-btn" onClick={handleClose}>
+                        <FaLongArrowAltRight />
+                    </div>
                     <div className="content-head">
                         <h2>{acara.date.hijri.month.ar}</h2>
                         <hr />
