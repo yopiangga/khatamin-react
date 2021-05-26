@@ -7,39 +7,19 @@ import { useHistory } from "react-router";
 
 export function Berita() {
     const [menuActive, setMenuActive, url, setUrl] = useContext(UserContext);
-    const [berita, setBerita] = useState([{id: "", date: "", thumbnail: "", title: "", url: ""}]);
-    const [page, setPage] = useState(1);
-    const [pagination, setPagination] = useState({page: "1", total_page: "1"});
-
+    const [berita, setBerita] = useState([{ title: "", description: "", img: "", url: "", author: "", created: "" }]);
 
     useEffect(() => {
         document.title = "Berita - Khatamin";
         setMenuActive('berita');
-        // https://cors-anywhere.herokuapp.com/
-        axios.get(`https://cors-anywhere.herokuapp.com/https://artikel-islam.netlify.app/.netlify/functions/api/msh?page=${page}`).then(
+        axios.get(`${url.api}artikel/read-artikel.php`).then(
             (res) => {
-                console.log(res.data.data);
-                setBerita(res.data.data.data);
-                setPagination(res.data.data.pagination);
+                setBerita(res.data.data);
             }
         ).catch((err) => {
             console.log(err);
         })
     }, [])
-
-    const handleMore = (event) => {
-        axios.get(`https://cors-anywhere.herokuapp.com/https://artikel-islam.netlify.app/.netlify/functions/api/msh?page=${event+1}`).then(
-            (res) => {
-                setBerita(berita => [...berita, ...res.data.data.data]);
-                setPagination(res.data.data.pagination);
-                setPage(event+1);
-            }
-        ).catch((err) => {
-            console.log(err);
-        })
-    }
-
-    console.log(berita);
 
     let history = useHistory();
 
@@ -63,7 +43,7 @@ export function Berita() {
                                 <div className="card" key={idx} onClick={() => {handleDetail(el.url)}}>
                                     <div className="card-top">
                                         <div className="box">
-                                            <img src={(el.thumbnail == '') ? example : el.thumbnail} alt=" " />
+                                            <img src={(el.img == '') ? example : el.img} alt="" />
                                         </div>
                                     </div>
                                     <div className="card-bottom">
@@ -79,7 +59,7 @@ export function Berita() {
                                             </div>
                                             <div className="footer">
                                                 <FaRegCalendarCheck />
-                                                <h5>{el.date}</h5>
+                                                <h5>{el.created}</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -88,27 +68,8 @@ export function Berita() {
                         })
                     }
 
-                    <div className="card-more">
+                    {/* <div className="card-more">
                         <button onClick={() => {handleMore(page)}}>Lebih banyak <FaPlus /></button>
-                    </div>
-
-
-                    {/* <div className="card">
-                        <div className="card-top">
-                            <div className="box">
-                                <img src={example} alt="" />
-                            </div>
-                        </div>
-                        <div className="card-bottom">
-                            <div className="box">
-                                <h3>How to make the perfect morning coffe</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione modi eaque temporibus cum a facilis nesciunt.</p>
-                                <div className="footer">
-                                    <FaRegCalendarCheck />
-                                    <h5>12 April 2021</h5>
-                                </div>
-                            </div>
-                        </div>
                     </div> */}
                     
                 </div>

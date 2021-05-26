@@ -1481,6 +1481,173 @@ $colorBlack : #000D1E;
     flex-direction: column;
     align-items: center;
 
+    .modal.active {
+        display: flex;
+    }
+    .modal {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        background-color: rgba($color: $colorDark, $alpha: 0.3);
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+        .form {
+            background-color: white;
+            width: 600px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 30px;
+
+            input, textarea, select {
+                outline: none;
+            }
+
+            h2 {
+                font-size: 28px;
+                font-weight: 500;
+                margin-top: 50px;
+                text-align: center;
+                line-height: 36px;
+                margin-bottom: 12px;
+            }
+
+            p {
+                width: 450px;
+                text-align: center;
+                line-height: 24px;
+                margin-bottom: 30px;
+                font-size: 14px;
+            }
+
+
+            .form-biodata {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .row {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+
+                    .col-6 {
+                        width: 49%;
+                    }
+
+                    .col-12 {
+                        width: 100%;
+                    }
+
+                    .form-group {
+                        display: flex;
+                        flex-direction: column;
+
+                        .box-profile {
+
+                            .imgProfile {
+                                width: 0.1px;
+                                height: 0.1px;
+                                opacity: 0;
+                                overflow: hidden;
+                                position: absolute;
+                                z-index: -1;
+                            }
+
+                            .lblImgProfile {
+                                width: 100%;
+                                height: 100px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border: 1px solid $colorGray;
+                                border-radius: 20px;
+                                background-color: rgba($color: $colorDark, $alpha: 0.01);
+                            }
+                        }
+
+                        label {
+                            margin-bottom: 10px;
+                            font-size: 14px;
+                        }
+
+                        input {
+                            height: 40px;
+                            border-radius: 20px;
+                            border: 1px solid $colorGray;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                        }
+
+                        select {
+                            height: 44px;
+                            border: 1px solid $colorGray;
+                            border-radius: 20px;
+                            padding-left: 20px;
+                            padding-right: 20px;
+                        }
+
+                        textarea {
+                            border: 1px solid $colorGray;
+                            border-radius: 20px;
+                            padding: 10px 20px 10px 20px;
+                        }
+
+                        input:focus {
+                            border: 1px solid $colorGreen;
+                        }
+
+                        select:focus {
+                            border: 1px solid $colorGreen;
+                        }
+
+                        textarea:focus {
+                            border: 1px solid $colorGreen;
+                        }
+
+                    }
+                }
+
+                .btn {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                button {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    margin-top: 10px;
+                    height: 45px;
+                    width: 200px;
+                    border-radius: 30px;
+                    color: white;
+                    cursor: pointer;
+                    font-weight: 500;
+                }
+
+                .btn-submit {
+                    border: 2px solid $colorGreen;
+                    background-color: $colorGreen;
+                }
+
+                .btn-cancel {
+                    border: 2px solid $colorLight;
+                    background-color: $colorLight;
+                    color: $colorDark;
+                }
+
+            }
+        }
+    }
+
     .filter {
         margin-bottom: 30px;
     }

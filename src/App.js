@@ -40,7 +40,7 @@ function App() {
 
   return (
     <UserProvider>
-      <HashRouter>
+      <BrowserRouter>
         <div className="App">
           <Sidebar />
           <div className="body">
@@ -90,7 +90,7 @@ function App() {
             </div>
           </div>
         </div>
-      </HashRouter>
+      </BrowserRouter>
     </UserProvider>
   );
 }

@@ -7,7 +7,7 @@ export const UserProvider = props => {
   //   const [user, setUser] = useState(iniateUser);
 
   const [menuActive, setMenuActive] = useState();
-  const [url, setUrl] = useState({ api: `http://192.168.10.247/project/4/admin/api/`, baseUrl: "http://192.168.10.247/project/4/admin/" });
+  const [url, setUrl] = useState({ api: `http://admin.petikdua.store/api/`, baseUrl: "http://admin.petikdua.store/" });
   const [lokasi, setLokasi] = useState({ latitude: 0, longitude: 0 });
 
   const geoLocation = () => {

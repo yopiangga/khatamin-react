@@ -1,47 +1,47 @@
 @media only screen and (min-width: 1024px) {
 
 
-@font-face {
-    font-family: "Poppins";
-    src: url('../fonts/poppins/Poppins-Regular.ttf');
-    font-weight: 400;
-}
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-Regular.ttf');
+        font-weight: 400;
+    }
 
-@font-face {
-    font-family: "Poppins";
-    src: url('../fonts/poppins/Poppins-Medium.ttf');
-    font-weight: 500;
-}
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-Medium.ttf');
+        font-weight: 500;
+    }
 
-@font-face {
-    font-family: "Poppins";
-    src: url('../fonts/poppins/Poppins-SemiBold.ttf');
-    font-weight: 600;
-}
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+        font-weight: 600;
+    }
 
-@font-face {
-    font-family: "Poppins";
-    src: url('../fonts/poppins/Poppins-Bold.ttf');
-    font-weight: 700;
-}
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-Bold.ttf');
+        font-weight: 700;
+    }
 
-@font-face {
-    font-family: "Poppins";
-    src: url('../fonts/poppins/Poppins-Italic.ttf');
-    font-style: italic;
-}
+    @font-face {
+        font-family: "Poppins";
+        src: url('../fonts/poppins/Poppins-Italic.ttf');
+        font-style: italic;
+    }
 
-$fontPrimary : "Poppins";
+    $fontPrimary : "Poppins";
 
-$colorYellow : #FDBF1F;
-$colorGreen : #01A765;
-$colorBlueLight : #CDEEF6;
-$colorPink : #F17EAB;
-$colorRed : #F02424;
-$colorGray : #C4C4C4;
-$colorLight : #ECF0F3;
-$colorDark : #393939;
-$colorBlack : #000D1E;
+    $colorYellow : #FDBF1F;
+    $colorGreen : #01A765;
+    $colorBlueLight : #CDEEF6;
+    $colorPink : #F17EAB;
+    $colorRed : #F02424;
+    $colorGray : #C4C4C4;
+    $colorLight : #ECF0F3;
+    $colorDark : #393939;
+    $colorBlack : #000D1E;
 
     .App {
         display: flex;
@@ -116,7 +116,7 @@ $colorBlack : #000D1E;
                     li:hover {
                         transition: 300ms;
                         background-color: $colorGreen;
-                        
+
                         A {
                             color: white;
 
@@ -125,10 +125,10 @@ $colorBlack : #000D1E;
                             }
                         }
                     }
-                    
+
                     li.active {
                         background-color: $colorGreen;
-                        
+
                         A {
                             color: white;
 
@@ -189,7 +189,7 @@ $colorBlack : #000D1E;
                 .icon {
                     width: 100px;
                     height: 100%;
-                    
+
                     .icon-bell {
                         width: 30px;
                         height: 100%;
@@ -328,7 +328,7 @@ $colorBlack : #000D1E;
                                         font-size: 14px;
                                         margin-left: 5px;
                                     }
-    
+
                                     path {
                                         color: $colorGreen;
                                     }
@@ -406,6 +406,7 @@ $colorBlack : #000D1E;
                     audio {
                         width: 100%;
                         outline: none;
+
                         source {
                             outline: none;
                         }
@@ -459,12 +460,12 @@ $colorBlack : #000D1E;
                     height: 110px;
                     border-radius: 20px;
                     padding: 15px 15px 15px 15px;
-    
+
                     .card-head {
                         display: flex;
                         justify-content: space-between;
                         margin-bottom: 30px;
-    
+
                         .circle {
                             border-radius: 30px;
                             height: 30px;
@@ -475,7 +476,7 @@ $colorBlack : #000D1E;
                             align-items: center;
                             color: $colorGreen;
                         }
-    
+
                         .icon {
                             color: $colorGreen;
                             font-size: 20px;
@@ -495,16 +496,16 @@ $colorBlack : #000D1E;
                             }
                         }
                     }
-    
+
                     .card-body {
                         display: flex;
                         justify-content: space-between;
-    
+
                         h4 {
                             font-weight: 500;
                             margin-bottom: 10px;
                         }
-    
+
                         h5 {
                             color: $colorDark;
                             font-size: 14px;
@@ -522,9 +523,9 @@ $colorBlack : #000D1E;
 
                 .card:hover {
                     .card-head {
-                            
+
                         .icon {
-                            
+
                             svg {
                                 left: 15px;
                                 transition: 300ms;
@@ -597,7 +598,7 @@ $colorBlack : #000D1E;
                             height: 100%;
                             overflow: hidden;
                             position: relative;
-                            
+
                             h3 {
                                 margin-top: 20px;
                                 font-weight: 500;
@@ -780,7 +781,7 @@ $colorBlack : #000D1E;
                                 height: 100%;
                                 border-radius: 100%;
                                 box-shadow: 60px -60px 60px rgba($color: $colorGreen, $alpha: 0.12);
-    
+
                                 .layer3 {
                                     width: 100%;
                                     height: 100%;
@@ -789,7 +790,7 @@ $colorBlack : #000D1E;
                                     justify-content: center;
                                     align-items: center;
                                     box-shadow: 0px 0px 30px rgba($color: $colorGray, $alpha: 0.2);
-        
+
                                     h1 {
                                         color: $colorGreen;
                                         font-size: 56px;
@@ -811,7 +812,7 @@ $colorBlack : #000D1E;
                     color: $colorBlack;
 
                     .clock {
-                        
+
                         h1 {
                             margin-left: 10px;
                             font-size: 60px;
@@ -839,7 +840,7 @@ $colorBlack : #000D1E;
                         }
                     }
                 }
-            }   
+            }
 
             .content-right {
                 width: 30%;
@@ -863,7 +864,7 @@ $colorBlack : #000D1E;
                         transition: 300ms;
                         position: absolute;
                         background-color: $colorLight;
-                        
+
                         .card {
                             background-color: transparent;
                             border-radius: 20px;
@@ -1006,7 +1007,7 @@ $colorBlack : #000D1E;
                         font-size: 16px;
                         color: $colorGreen;
                     }
-                    
+
                     h3 {
                         font-weight: 500;
                         font-size: 24px;
@@ -1015,17 +1016,17 @@ $colorBlack : #000D1E;
 
                     .tahun-left {
                         width: 30%;
-                        
+
                     }
-                    
+
                     .tahun-now {
                         width: 40%;
-                        
+
                     }
-                    
+
                     .tahun-right {
                         width: 30%;
-                       
+
                     }
                 }
 
@@ -1038,7 +1039,7 @@ $colorBlack : #000D1E;
 
                     .body-hari {
                         width: 700px;
-                        margin-bottom: 30px;    
+                        margin-bottom: 30px;
                         background-color: transparent;
                         display: flex;
 
@@ -1119,6 +1120,7 @@ $colorBlack : #000D1E;
                         color: white;
                     }
                 }
+
                 .content-head {
                     width: 80%;
                     margin-bottom: 80px;
@@ -1178,7 +1180,7 @@ $colorBlack : #000D1E;
             }
         }
     }
-    
+
     .kisahNabi {
         color: $colorBlack;
         width: 100%;
@@ -1240,7 +1242,7 @@ $colorBlack : #000D1E;
                             height: 100%;
                             overflow: hidden;
                             position: relative;
-                            
+
                             h3 {
                                 margin-top: 20px;
                                 font-weight: 500;
@@ -1357,7 +1359,7 @@ $colorBlack : #000D1E;
     }
 
     .kisahNabiDetail {
-        
+
         color: $colorBlack;
         width: 100%;
         height: 100%;
@@ -1432,6 +1434,173 @@ $colorBlack : #000D1E;
         flex-direction: column;
         align-items: center;
 
+        .modal.active {
+            display: flex;
+        }
+        .modal {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 999;
+            background-color: rgba($color: $colorDark, $alpha: 0.3);
+            display: none;
+            justify-content: center;
+            align-items: center;
+
+            .form {
+                background-color: white;
+                width: 600px;
+                height: 600px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 30px;
+
+                input, textarea, select {
+                    outline: none;
+                }
+
+                h2 {
+                    font-size: 28px;
+                    font-weight: 500;
+                    margin-top: 50px;
+                    text-align: center;
+                    line-height: 36px;
+                    margin-bottom: 12px;
+                }
+
+                p {
+                    width: 450px;
+                    text-align: center;
+                    line-height: 24px;
+                    margin-bottom: 30px;
+                    font-size: 14px;
+                }
+
+
+                .form-biodata {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .row {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 20px;
+
+                        .col-6 {
+                            width: 49%;
+                        }
+
+                        .col-12 {
+                            width: 100%;
+                        }
+
+                        .form-group {
+                            display: flex;
+                            flex-direction: column;
+
+                            .box-profile {
+
+                                .imgProfile {
+                                    width: 0.1px;
+                                    height: 0.1px;
+                                    opacity: 0;
+                                    overflow: hidden;
+                                    position: absolute;
+                                    z-index: -1;
+                                }
+
+                                .lblImgProfile {
+                                    width: 100%;
+                                    height: 100px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border: 1px solid $colorGray;
+                                    border-radius: 20px;
+                                    background-color: rgba($color: $colorDark, $alpha: 0.01);
+                                }
+                            }
+
+                            label {
+                                margin-bottom: 10px;
+                                font-size: 14px;
+                            }
+
+                            input {
+                                height: 40px;
+                                border-radius: 20px;
+                                border: 1px solid $colorGray;
+                                padding-left: 20px;
+                                padding-right: 20px;
+                            }
+
+                            select {
+                                height: 44px;
+                                border: 1px solid $colorGray;
+                                border-radius: 20px;
+                                padding-left: 20px;
+                                padding-right: 20px;
+                            }
+
+                            textarea {
+                                border: 1px solid $colorGray;
+                                border-radius: 20px;
+                                padding: 10px 20px 10px 20px;
+                            }
+
+                            input:focus {
+                                border: 1px solid $colorGreen;
+                            }
+
+                            select:focus {
+                                border: 1px solid $colorGreen;
+                            }
+
+                            textarea:focus {
+                                border: 1px solid $colorGreen;
+                            }
+
+                        }
+                    }
+
+                    .btn {
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    button {
+                        margin-left: 5px;
+                        margin-right: 5px;
+                        margin-top: 10px;
+                        height: 45px;
+                        width: 200px;
+                        border-radius: 30px;
+                        color: white;
+                        cursor: pointer;
+                        font-weight: 500;
+                    }
+
+                    .btn-submit {
+                        border: 2px solid $colorGreen;
+                        background-color: $colorGreen;
+                    }
+
+                    .btn-cancel {
+                        border: 2px solid $colorLight;
+                        background-color: $colorLight;
+                        color: $colorDark;
+                    }
+
+                }
+            }
+        }
+
         .filter {
             margin-bottom: 30px;
         }
@@ -1474,12 +1643,12 @@ $colorBlack : #000D1E;
                     min-height: 110px;
                     border-radius: 20px;
                     padding: 15px 15px 15px 15px;
-    
+
                     .card-head {
                         display: flex;
                         justify-content: space-between;
                         margin-bottom: 30px;
-    
+
                         .circle {
                             border-radius: 30px;
                             height: 30px;
@@ -1490,7 +1659,7 @@ $colorBlack : #000D1E;
                             align-items: center;
                             color: $colorGreen;
                         }
-    
+
                         .icon {
                             color: $colorGreen;
                             font-size: 20px;
@@ -1510,16 +1679,16 @@ $colorBlack : #000D1E;
                             }
                         }
                     }
-    
+
                     .card-body {
                         display: flex;
                         justify-content: space-between;
-    
+
                         h4 {
                             font-weight: 500;
                             margin-bottom: 10px;
                         }
-    
+
                         h5 {
                             color: $colorDark;
                             font-size: 14px;
@@ -1537,9 +1706,9 @@ $colorBlack : #000D1E;
 
                 .card:hover {
                     .card-head {
-                            
+
                         .icon {
-                            
+
                             svg {
                                 left: 15px;
                                 transition: 300ms;
@@ -1557,7 +1726,7 @@ $colorBlack : #000D1E;
             h3 {
                 font-size: 20px;
                 font-weight: 500;
-                margin-bottom: 30px;    
+                margin-bottom: 30px;
             }
 
             .card-rekening {
@@ -1591,11 +1760,11 @@ $colorBlack : #000D1E;
                     border-radius: 20px;
                     overflow: hidden;
                     margin-bottom: 20px;
-    
+
                     .card-top {
                         width: 100%;
                         height: 50%;
-    
+
                         .box {
                             width: 100%;
                             height: 100%;
@@ -1604,24 +1773,24 @@ $colorBlack : #000D1E;
                             justify-content: center;
                             align-items: center;
                             border-radius: 20px;
-    
+
                             img {
                                 width: 250px;
                                 min-height: 180px;
                             }
                         }
                     }
-    
+
                     .card-bottom {
                         width: 100%;
                         height: 50%;
-    
+
                         .box {
                             width: 100%;
                             height: 100%;
                             overflow: hidden;
                             position: relative;
-                            
+
                             h3 {
                                 font-size: 16px;
                                 margin-top: 20px;
@@ -1631,7 +1800,7 @@ $colorBlack : #000D1E;
                                 max-height: 45px;
                                 overflow: hidden;
                             }
-    
+
                             p {
                                 line-height: 22px;
                                 color: $colorDark;
@@ -1639,14 +1808,14 @@ $colorBlack : #000D1E;
                                 max-height: 70px;
                                 overflow: hidden;
                             }
-    
+
                             .author {
                                 position: absolute;
                                 bottom: 30px;
                                 display: flex;
                                 justify-content: flex-start;
                                 align-items: center;
-    
+
                                 .circle {
                                     width: 30px;
                                     height: 30px;
@@ -1659,22 +1828,22 @@ $colorBlack : #000D1E;
                                     color: $colorGreen;
                                     margin-right: 10px;
                                 }
-    
+
                                 .text {
                                     color: $colorDark;
                                     display: flex;
                                     align-items: center;
-    
+
                                     h5 {
                                         font-weight: 400;
                                         font-size: 14px;
                                         line-height: 22px;
                                         margin-bottom: 10px;
                                     }
-    
+
                                 }
                             }
-    
+
                             .footer {
                                 position: absolute;
                                 bottom: 0;
@@ -1683,7 +1852,7 @@ $colorBlack : #000D1E;
                                 color: $colorGreen;
                                 justify-content: flex-start;
                                 width: 100%;
-    
+
                                 h5 {
                                     margin-left: 10px;
                                     font-size: 14px;
@@ -1693,7 +1862,7 @@ $colorBlack : #000D1E;
                         }
                     }
                 }
-    
+
                 .card-more {
                     margin-right: 1%;
                     width: 215px;
@@ -1706,7 +1875,7 @@ $colorBlack : #000D1E;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-    
+
                     button {
                         padding: 10px 20px 10px 20px;
                         width: 150px;
@@ -1720,12 +1889,12 @@ $colorBlack : #000D1E;
                         justify-content: space-between;
                         transition: 300ms;
                         outline: none;
-    
+
                         path {
                             margin-left: 20px;
                         }
                     }
-    
+
                     button:hover {
                         transition: 300ms;
                         background-color: transparent;

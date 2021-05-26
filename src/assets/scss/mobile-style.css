@@ -1684,6 +1684,189 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .infaq .modal.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .infaq .modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(57, 57, 57, 0.3);
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .infaq .modal .form {
+    background-color: white;
+    width: 95%;
+    min-height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 30px;
+    padding-bottom: 60px;
+  }
+  .infaq .modal .form input, .infaq .modal .form textarea, .infaq .modal .form select {
+    outline: none;
+  }
+  .infaq .modal .form h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 36px;
+    margin-bottom: 12px;
+  }
+  .infaq .modal .form p {
+    width: 80%;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  .infaq .modal .form .form-biodata {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .infaq .modal .form .form-biodata .row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .infaq .modal .form .form-biodata .row .col-6 {
+    width: 49%;
+  }
+  .infaq .modal .form .form-biodata .row .col-12 {
+    width: 100%;
+  }
+  .infaq .modal .form .form-biodata .row .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .infaq .modal .form .form-biodata .row .form-group .box-profile .imgProfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  .infaq .modal .form .form-biodata .row .form-group .box-profile .lblImgProfile {
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid #C4C4C4;
+    border-radius: 20px;
+    background-color: rgba(57, 57, 57, 0.01);
+  }
+  .infaq .modal .form .form-biodata .row .form-group label {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .infaq .modal .form .form-biodata .row .form-group input {
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #C4C4C4;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .infaq .modal .form .form-biodata .row .form-group select {
+    height: 44px;
+    border: 1px solid #C4C4C4;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .infaq .modal .form .form-biodata .row .form-group textarea {
+    border: 1px solid #C4C4C4;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+  }
+  .infaq .modal .form .form-biodata .row .form-group input:focus {
+    border: 1px solid #01A765;
+  }
+  .infaq .modal .form .form-biodata .row .form-group select:focus {
+    border: 1px solid #01A765;
+  }
+  .infaq .modal .form .form-biodata .row .form-group textarea:focus {
+    border: 1px solid #01A765;
+  }
+  .infaq .modal .form .form-biodata .btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .infaq .modal .form .form-biodata button {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    height: 45px;
+    width: 90%;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .infaq .modal .form .form-biodata .btn-submit {
+    border: 2px solid #01A765;
+    background-color: #01A765;
+  }
+  .infaq .modal .form .form-biodata .btn-cancel {
+    border: 2px solid #ECF0F3;
+    background-color: #ECF0F3;
+    color: #393939;
+  }
   .infaq .filter {
     margin-bottom: 30px;
   }
