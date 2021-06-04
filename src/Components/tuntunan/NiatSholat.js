@@ -22,8 +22,6 @@ export function NiatSholat() {
         })
     }, [])
 
-    console.log(niat);
-
         $('.card-surat-detail').addClass('active');
         $('.card-group').addClass('nano');
 

@@ -11,8 +11,6 @@ export function KisahNabiDetail(){
         setKisahDetail(JSON.parse(localStorage.getItem('kisahDetail')));
     }, [])
 
-    console.log(kisahDetail)
-    
     return(
         <div className="kisahNabiDetail">
             <div className="content">

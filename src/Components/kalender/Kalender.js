@@ -37,8 +37,6 @@ export function Kalender() {
         })
     }, [])
 
-    console.log(kalender);
-
     const handleClick = (event) => {
         $('.kalender .content .content-left').addClass('resize');
         $('.kalender .content .content-right').addClass('active');
@@ -123,7 +121,7 @@ export function Kalender() {
                                     let tanggal = new Date();
                                     return (
                                         <div className="box" key={idx}>
-                                            <div className={(el.date.gregorian.day == `${tanggal.getDate()}`) ? "circle active" : "circle"} onClick={()=> {handleClick(idx)}}>
+                                            <div className={(parseInt(el.date.gregorian.day) == `${tanggal.getDate()}`) ? "circle active" : "circle"} onClick={()=> {handleClick(idx)}}>
                                                 <h4>{el.date.gregorian.day}</h4>
                                             </div>
                                         </div>
