@@ -8,9 +8,7 @@ import {
 } from "react-router-dom";
 import { FaLongArrowAltRight, FaRegCalendarCheck, FaRegMoneyBillAlt, FaSignInAlt, FaSignOutAlt } from 'react-icons/fa';
 import example from "../../assets/images/example.jpg"
-import kegiatan1 from "../../assets/images/kegiatan-1.jpeg"
-import kegiatan2 from "../../assets/images/kegiatan-2.jpeg"
-import kegiatan3 from "../../assets/images/kegiatan-3.jpg"
+import logoPmii from "../../assets/images/logo-pmii.png"
 import axios from "axios";
 
 export function Infaq() {
@@ -95,6 +93,10 @@ export function Infaq() {
 
     const handleChangeImage = (event) => {
         setGambar(event.target.files[0]);
+    }
+
+    const handleCloseFooter = () => {
+        document.querySelector('.footer-infaq').classList.add('close');
     }
 
     return (
@@ -350,6 +352,21 @@ export function Infaq() {
                         </div>
                     </div> */}
 
+                </div>
+            </div>
+
+            <div className="footer-infaq">
+                <div className="content">
+                    <div className="content-left">
+                        <p>Kami telah bekerja sama dengan PMII rayon PENS untuk pengelolaan dana infaq. Dana infaq yang ada di Khatamin akan disalurkan pada PMII untuk pengelolaan lebih lanjut. Dana yang terkumpul akan digunakan untuk kegiatan santunan anak yatim, Jum'at berkah dan kegiatan sosial lain. </p>
+                    </div>
+                    <div className="content-right">
+                        <div className="close" onClick={handleCloseFooter}>
+                            <h4>Close</h4>
+                        </div>
+
+                        <img src={logoPmii} alt="" />
+                    </div>
                 </div>
             </div>
 

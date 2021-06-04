@@ -2179,6 +2179,71 @@
     border: 2px solid white;
     cursor: pointer;
   }
+  .infaq .footer-infaq {
+    -webkit-transition: 200ms;
+    transition: 200ms;
+    position: fixed;
+    bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90%;
+    min-height: 140px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 20px rgba(57, 57, 57, 0.08);
+            box-shadow: 0px 10px 20px rgba(57, 57, 57, 0.08);
+  }
+  .infaq .footer-infaq .content {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .infaq .footer-infaq .content .content-left {
+    width: 80%;
+  }
+  .infaq .footer-infaq .content .content-left p {
+    line-height: 24px;
+    font-size: 14px;
+  }
+  .infaq .footer-infaq .content .content-right {
+    position: relative;
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .infaq .footer-infaq .content .content-right .close {
+    position: absolute;
+    cursor: pointer;
+    top: -60px;
+    right: -30px;
+  }
+  .infaq .footer-infaq .content .content-right .close h4 {
+    font-weight: 500;
+    font-size: 14px;
+    color: #393939;
+  }
+  .infaq .footer-infaq .content .content-right img {
+    width: 80px;
+  }
+  .infaq .footer-infaq.close {
+    -webkit-transition: 200ms;
+    transition: 200ms;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+  }
   #desktop {
     display: mobile;
   }

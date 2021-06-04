@@ -1948,6 +1948,68 @@
                 }
             }
         }
+
+        .footer-infaq {
+            transition: 200ms;
+            position: fixed;
+            bottom: 50px;
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            min-height: 200px;
+            padding: 20px 0px 20px 0px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 10px 20px rgba($color: $colorDark, $alpha: 0.08);
+
+            .content {
+                width: 90%;
+                display: flex;
+                align-items: center;
+                float: left;
+
+                .content-left {
+                    width: 100%;
+
+                    p {
+                        line-height: 24px;
+                        font-size: 14px; 
+                    }
+                }
+
+                .content-right {
+                    position: relative;
+                    width: 0%;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    .close {
+                        position: absolute;
+                        cursor: pointer;
+                        top: -140px;
+                        right: -10px;
+
+                        h4 {
+                            font-weight: 500;
+                            font-size: 14px;
+                            color: $colorDark;
+                        }
+                    }
+
+                    img {
+                        display: none;
+                        width: 80px;
+                    }
+                }
+            }
+        }
+
+        .footer-infaq.close {
+            transition: 200ms;
+            width: 0px;
+            height: 0px;
+            overflow: hidden;
+        }
     }
 
     #desktop {
